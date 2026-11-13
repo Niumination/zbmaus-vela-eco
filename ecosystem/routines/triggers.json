@@ -1,0 +1,45 @@
+[
+  {
+    "id": "a008e49f-c23a-405a-8fa6-29b9818b0774",
+    "bot": "ZB",
+    "name": "Cek perubahan GitHub harian",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 9 * * *",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Periksa semua repositori GitHub saya dan buat ringkasan perubahan terbaru (commit baru, PR baru, issue baru) sejak 24 jam terakhir. Langkah: 1) Daftar semua repositori yang bisa diakses. 2) Untuk setiap repositori, ambil commit terbaru sejak kemarin dan PR/issue yang baru dibuat. 3) Ringkas perubahan per repositori, sebutkan siapa yang commit dan apa pesan commitnya. 4) Laporkan ringkasan singkat ke saya. Jika tidak ada perubahan, katakan tidak ada aktivitas baru."
+  },
+  {
+    "id": "e0c1a6d9-72a7-4705-a30d-31a2947df0fd",
+    "bot": "ZB",
+    "name": "Keep an eye on my day",
+    "kind": "schedule",
+    "schedule_type": "interval",
+    "interval_minutes": 15,
+    "enabled": true,
+    "instructions": "Keep an eye on my day for me. Email: pick what I must not miss: mail that needs my reply, mail from someone I meet today, and anything with a deadline. Leave out newsletters, receipts and notifications. Meetings: before a meeting with other people, prepare me in a few lines: who they are, why we are meeting, what is still open, and one next step."
+  },
+  {
+    "id": "505342cc-31d7-4add-b0e7-6dc9406e4e04",
+    "bot": "Nova",
+    "name": "Morning Brief zbmaus",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 8 * * *",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Setiap pagi: 1. Cek ketersediaan bot rekan (Kaggle-Qwen dan ZB). 2. Periksa status antrean koordinasi dan tugas yang berjalan. 3. Susun dan laporkan ringkasan harian (Morning Brief) mencakup: kesehatan sistem zbmaus, bot aktif, tugas yang memerlukan perhatian."
+  },
+  {
+    "id": "c26508c9-cad6-40e6-a419-b3a140695e5c",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Monitoring & Produksi Postingan Harian Kitab Surgawi",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 9 * * *",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "1. Periksa analitik dan metrik performa channel YouTube @kitabsurgawi-1357 (subscriber, total views, jam tayang menuju target YPP). 2. Susun dan siapkan 1 materi Short harian dan publikasi. 3. Cross-post video native vertikal ke Halaman Facebook resmi."
+  }
+]

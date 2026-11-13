@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-14T03:45:00+08:00",
+  "department": "General",
+  "chief_bot": {
+    "name": "ZB",
+    "alias": "MausBot",
+    "role": "Chief of Staff & Personal Assistant",
+    "id": "e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7",
+    "description": "Personal bot in OpenMausBot and helper for everything in OMB. Coordinates specialists, triggers routines, manages team setup, memory, and Data tools."
+  },
+  "teammates": [
+    {
+      "name": "AsnAdmin",
+      "id": "3f3b907a-297d-4cea-92d2-92c276157470",
+      "model": "nous/reflection/beam-1.0-501b-a23b:free",
+      "role": "Spesialis asn-admin (Mesin Administrasi ASN)",
+      "description": "Spesialis repo privat Niumination/asn-admin — mesin produksi administrasi ASN Diskominfo Aceh Tengah: naskah dinas, SKP/eKinerja, administrasi harian, plus gate keamanan repo.",
+      "status": "active"
+    },
+    {
+      "name": "ZbmausHumanoid-Vercel",
+      "id": "c3ec552d-e63d-45cd-ba95-ce0f6e95d3f9",
+      "model": "nous/reflection/beam-1.0-501b-a23b:free",
+      "role": "Spesialis zbmaus-humanoid (zbmaus-humanoid.vercel.app)",
+      "description": "Spesialis zbmaus-humanoid: asisten humanoid interaktif yang terhubung ke OMB. Monitor, maintain, dan kembangkan zbmaus-humanoid.vercel.app (Vite + React + TypeScript).",
+      "status": "active"
+    },
+    {
+      "name": "YouTubeGrowth Kitab Surgawi",
+      "id": "3bbb857a-0cdc-4849-898b-a135cf3bf78c",
+      "model": "gemini-3.8-flash",
+      "role": "Spesialis YouTube Growth & Monetisasi",
+      "description": "YouTube Growth & Monetization specialist for 'Kitab Surgawi' (youtube.com/@kitabsurgawi-1357), Indonesian Islamic content. Mission: grow subscribers/views and generate YouTube income.",
+      "status": "active"
+    },
+    {
+      "name": "IslamicEdu Kids",
+      "id": "c927d946-7a7e-4a77-b0b5-e4e9b6942fb7",
+      "model": "agnes/agnes-2.5-flash",
+      "role": "Spesialis Pendidikan Agama Islam Anak Usia 2-4 Tahun",
+      "description": "Friendly Islamic education specialist for children ages 2-4. Help parents teach Islam to toddlers/preschoolers simply.",
+      "status": "active"
+    },
+    {
+      "name": "Kaggle-Qwen",
+      "id": "0f9c19ec-26e5-4e36-91dd-3d4870bfcfff",
+      "model": "qwen3.8-flash-next-gyro-gyro-s",
+      "role": "Asisten Ringan (Model Kaggle Qwen)",
+      "description": "Lightweight assistant running on the Qwen3.8-Flash-Next Gyro-S model via Kaggle T4 GPU (32k context window). Works on short, focused tasks.",
+      "status": "active"
+    },
+    {
+      "name": "Nova",
+      "id": "8217c1f3-e5da-4872-b68f-7dc645123226",
+      "model": "opencode/beam-free",
+      "role": "Spesialis Tupoksi Baru & Integrasi Ekosistem",
+      "description": "Specialist for new duties (tupoksi baru) & ecosystem integration in zbmaus (OpenMausBot). Handles responsibilities emerging as ecosystem grows, drawing on 7 studied architectural patterns.",
+      "status": "active"
+    }
+  ]
+}

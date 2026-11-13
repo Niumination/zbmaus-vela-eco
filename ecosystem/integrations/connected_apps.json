@@ -1,0 +1,54 @@
+{
+  "policy": "Zero-Credentials (metadata only)",
+  "apps": [
+    {
+      "name": "GitHub",
+      "provider": "Composio",
+      "account": "Niumination",
+      "scope": "Repository management, code sync, workflow triggers, commit inspection",
+      "status": "connected"
+    },
+    {
+      "name": "YouTube",
+      "provider": "Composio / Google API",
+      "target": "@kitabsurgawi-1357",
+      "scope": "Analytics inspection, video metadata, comment management",
+      "status": "connected"
+    },
+    {
+      "name": "Facebook",
+      "provider": "Composio (AM account)",
+      "target": "Page ID 1467846356417352 (Kitab Surgawi)",
+      "scope": "Native video publishing, automated social distribution",
+      "status": "connected"
+    },
+    {
+      "name": "Vercel",
+      "provider": "Composio",
+      "target": "zbmaus-humanoid.vercel.app",
+      "scope": "Frontend deployment, status monitoring",
+      "status": "connected"
+    },
+    {
+      "name": "Kaggle",
+      "provider": "Composio",
+      "target": "T4 GPU notebook runner",
+      "scope": "Qwen model inference server for lightweight tasks",
+      "status": "connected"
+    },
+    {
+      "name": "BoldSign",
+      "provider": "Composio",
+      "target": "E-signature workflows",
+      "scope": "Document signature automation",
+      "status": "connected"
+    },
+    {
+      "name": "Data Engine",
+      "provider": "OpenMausBot Native (DuckDB)",
+      "target": "Local analytics DB",
+      "scope": "data_load, data_describe, data_sql, data_show, data_export",
+      "status": "active"
+    }
+  ]
+}
