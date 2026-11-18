@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "updated_at": "2026-11-18T13:15:00+08:00",
+  "version": "1.1.0",
+  "updated_at": "2026-11-19T00:00:00+08:00",
   "department": "General",
   "chief_bot": {
     "name": "ZB",
@@ -11,7 +11,7 @@
     "model": "agnes/agnes-2.5-flash",
     "instance": "openaiCompat",
     "active_thread_model": "gemini-3.8-flash (Antigravity, effort high)",
-    "note": "Default sesuai setup aktif = agnes/agnes-2.5-flash; thread berjalan masih memakai gemini-3.8-flash/Antigravity."
+    "note": "Default seuai setip aktip = agnes/agnes-2.5-flash; thread berlanjut utama tetap gemini-3.8-flash/Antigravity."
   },
   "teammates": [
     {
@@ -55,7 +55,7 @@
       "id": "0f9c19ec-26e5-4e36-91dd-3d4870bfcfff",
       "model": "qwen3.8-flash-next-gyro-gyro-s",
       "role": "Asisten Ringan (Model Kaggle Qwen)",
-      "description": "Lightweight assistant running on the Qwen3.8-Flash-Next Gyro-S model via Kaggle T4 GPU (32k context window). Works on short, focused tasks.",
+      "description": "Lightweight assistant running on the Qwen3.8-Flash-Next Gyro-S model via Kaggle T4 GPU (32k context window). Works only on short, focused tasks.",
       "status": "active",
       "instance": "openai-compat-74d7b092-fc02-47ef-8b96-de88e41f5c98"
     },
