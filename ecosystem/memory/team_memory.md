@@ -49,3 +49,43 @@ Created bot 'Nova' (Spesialis Tupoksi Baru & Integrasi Ekosistem) in General to 
 The user's OpenMausBot ecosystem is named 'zbmaus'. It consists of bots, routines/triggers, rooms, memory, skills, connected apps, and data tools running on a VPS (maus.abstract.biz.id). The user's GitHub account is Niumination with ~150 repos, many of which relate to this ecosystem (omb-lightvela, ecosystem-omb, ecosystem-config, brain, mirai, hermes-agent, etc.).
 
 ---
+
+## Standardisasi Model AI Tim General
+- **Aliases**: `standar model bot omb, model fallback tim general`
+- **Tanggal/Ref**: `2026-11-15`
+
+Seluruh bot spesialis (YouTubeGrowth, AsnAdmin, Nova, ZbmausHumanoid-Vercel, IslamicEdu Kids) dialihkan ke `agnes/agnes-2.5-flash` pada openaiCompat. ZB tetap memakai `gemini-3.8-flash` pada Antigravity.
+
+---
+
+## Prinsip Isolasi Ekosistem zbmaus
+- **Aliases**: `isolasi ekosistem zbmaus, larangan sentuh repo luar`
+- **Tanggal/Ref**: `2026-11-15`
+
+Dilarang keras mencampuradukkan repo ekosistem lain (LightVela, mirai, hermes). Operasi dibatasi pada zbmaus-vela, zbmaus-vela-secrets, zbmaus-vela-eco, asn-admin, zbmaus-humanoid.
+
+---
+
+## Struktur Repositori Ekosistem zbmaus
+- **Aliases**: `pemetaan repo ekosistem omb, peran repo zbmaus, batas ekosistem zbmaus`
+- **Tanggal/Ref**: `2026-11-15`
+
+zbmaus-vela = blueprint VPS; zbmaus-vela-secrets = backup kredensial; zbmaus-vela-eco = snapshot ekosistem tanpa rahasia; asn-admin & zbmaus-humanoid = proyek spesifik. Niu-Humanoid, mira-humanoid, apex-humanoid-rebuild, lightvela, ecosystem-config, mirai = milik LightVela, bukan zbmaus.
+
+---
+
+## Arah Produksi Konten & Mesin Kitab Surgawi
+- **Aliases**: `arah produksi kitab surgawi, variasi visual reels, upgrade mesin produksi kitab surgawi`
+- **Tanggal/Ref**: `2026-11-15`
+
+Jadwal & riset topik setiap Senin 07:00 WIB; variasi visual Reels diperkaya; dokumenter Netflix-style diperkaya aset; peningkatan mesin produksi digabung evaluasi harian 15:30 WIB.
+
+---
+
+## Jadwal Rilis Dokumenter Kitab Surgawi
+- **Aliases**: `jadwal dokumenter islami, rilis dokumenter kitab surgawi`
+- **Tanggal/Ref**: `2026-11-15`
+
+Dokumenter Islami tayang 2x seminggu (Senin & Kamis 10:00 WIB) + klip Shorts.
+
+---

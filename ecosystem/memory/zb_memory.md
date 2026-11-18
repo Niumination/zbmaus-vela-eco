@@ -19,3 +19,10 @@
 ### 3. `memory/github.md` (GitHub Workspace)
 - **2026-10-29**: Pengguna memiliki workspace privat GitHub bernama OMB.
 - **2026-10-29**: Akun GitHub (`Niumination`) terhubung aktif ke ekosistem.
+
+
+### 4. Pembaruan MEMORY.md (Long-term Facts, 2026-11-18)
+- **2026-11-16**: Ringkasan insiden routine: Evaluasi Kualitas Harian Kitab Surgawi gagal 3x (rate limit); Cross-post FB&IG gagal 2x; Balasan Komentar gagal 3x (rate limit API agnes gratis) — perlu upgrade Token Plan atau tunggu reset kuota.
+- **2026-11-18**: Routine Sinkronisasi Harian zbmaus-vela-eco mulai berjalan sesuai jadwal 23:00 WIB (run pertama mengalami failure streak due truncated tool calls).
+- **2026-11-18**: Preferensi user: perintah sangat pendek ('lanjutkan', 'jawaban singkat') dan mengharapkan ringkasan harian seluruh routine yang berjalan/gagal/retry.
+- **2026-11-18**: User menjalankan maintenance ekosistem larut malam ~23:00 WIB dan memantau async.

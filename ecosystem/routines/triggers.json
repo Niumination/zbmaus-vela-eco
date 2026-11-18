@@ -21,18 +21,18 @@
     "instructions": "Keep an eye on my day for me. Email: pick what I must not miss: mail that needs my reply, mail from someone I meet today, and anything with a deadline. Leave out newsletters, receipts and notifications. Meetings: before a meeting with other people, prepare me in a few lines: who they are, why we are meeting, what is still open, and one next step."
   },
   {
-    "id": "505342cc-31d7-4add-b0e7-6dc9406e4e04",
+    "id": "c80996f3-eead-488a-95ad-0b37a0ec0ef4",
     "bot": "Nova",
     "name": "Morning Brief zbmaus",
     "kind": "schedule",
-    "schedule_type": "cron",
+    "schedule_type": "weekly",
     "expression": "0 8 * * *",
     "timezone": "Asia/Jakarta",
     "enabled": true,
     "instructions": "Setiap pagi: 1. Cek ketersediaan bot rekan (Kaggle-Qwen dan ZB). 2. Periksa status antrean koordinasi dan tugas yang berjalan. 3. Susun dan laporkan ringkasan harian (Morning Brief) mencakup: kesehatan sistem zbmaus, bot aktif, tugas yang memerlukan perhatian."
   },
   {
-    "id": "c26508c9-cad6-40e6-a419-b3a140695e5c",
+    "id": "aa2deb00-5c6a-4d99-b1b4-4e65231c0c5b",
     "bot": "YouTubeGrowth Kitab Surgawi",
     "name": "Monitoring & Produksi Postingan Harian Kitab Surgawi",
     "kind": "schedule",
@@ -41,5 +41,101 @@
     "timezone": "Asia/Jakarta",
     "enabled": true,
     "instructions": "1. Periksa analitik dan metrik performa channel YouTube @kitabsurgawi-1357 (subscriber, total views, jam tayang menuju target YPP). 2. Susun dan siapkan 1 materi Short harian dan publikasi. 3. Cross-post video native vertikal ke Halaman Facebook resmi."
+  },
+  {
+    "id": "e4394ce5-cdc6-46ea-8e28-90c33ea70355",
+    "bot": "ZB",
+    "name": "Sinkronisasi & Pembaruan Harian zbmaus-vela-eco",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 23 * * *",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Perbarui dan sinkronisasikan seluruh state dinamis ekosistem OMB ke repo Niumination/zbmaus-vela-eco: kumpulkan bot/model/SOUL/memory/routine/apps/skills, pastikan bebas kredensial, tulis log harian, commit & push ke main."
+  },
+  {
+    "id": "04522463-b917-4886-9462-f74c9d80b45c",
+    "bot": "ZbmausHumanoid-Vercel",
+    "name": "zbmaus-humanoid live site chat",
+    "kind": "webhook",
+    "enabled": true,
+    "instructions": "Saat pesan masuk dari live site zbmaus-humanoid.vercel.app, balas sebagai bot zbmaus-humanoid dalam Bahasa Indonesia, singkat dan membantu."
+  },
+  {
+    "id": "3bdb8754-c92e-480a-a34e-3d712e296e41",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Balasan Komentar Kitab Surgawi",
+    "kind": "schedule",
+    "schedule_type": "interval",
+    "interval_minutes": 120,
+    "window": "08:00-23:00",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Balas komentar channel yang belum dibalas >2 jam dengan aturan bahasa Indonesia hangat, dalil sahih, tanpa mengarang; abaikan spam."
+  },
+  {
+    "id": "6a5fd5fa-6aca-4ca5-812c-a8e62d1b8daa",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Evaluasi Kualitas Harian & Peningkatan Mesin Produksi Kitab Surgawi",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "30 15 * * *",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Evaluasi performa konten harian 15:30 WIB dan kembangkan tools/mesin produksi visual."
+  },
+  {
+    "id": "35244f11-3100-4a46-8110-eadc6ac6a75c",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Laporan Performa Mingguan Kitab Surgawi (YouTube vs Facebook)",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 15 * * 5",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Laporan performa mingguan YouTube vs FB + rekomendasi pertumbuhan subscriber/YPP."
+  },
+  {
+    "id": "15714d6a-26be-4b6e-b0e2-4c4f532b2081",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Cross-post Kitab Surgawi ke Facebook & Instagram",
+    "kind": "schedule",
+    "schedule_type": "interval",
+    "interval_minutes": 180,
+    "window": "08:00-23:00",
+    "enabled": true,
+    "instructions": "Cross-post video native baru ke Facebook Page & Instagram Reels; caption tanpa link keluar, link YouTube di komentar pertama."
+  },
+  {
+    "id": "61f30e61-c25a-49e9-86bb-7f5cbf3f5296",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Penyusunan Jadwal & Materi Tayang Mingguan Kitab Surgawi",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 7 * * 1",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Susun jadwal, riset dalil, dan kurasi aset untuk satu minggu penuh setiap Senin 07:00 WIB."
+  },
+  {
+    "id": "5af330ca-15f2-41f8-8c83-a2cf1dd9e1d6",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Produksi & Publikasi Dokumenter Islami Kitab Surgawi",
+    "kind": "schedule",
+    "schedule_type": "cron",
+    "expression": "0 10 * * 1,4",
+    "timezone": "Asia/Jakarta",
+    "enabled": true,
+    "instructions": "Produksi dan publikasi dokumenter islami 2x seminggu (Senin & Kamis 10:00 WIB) + klip Shorts."
+  },
+  {
+    "id": "c7f27cd4-b86b-4f22-921f-3b397e190e4d",
+    "bot": "YouTubeGrowth Kitab Surgawi",
+    "name": "Selesaikan playlist & thumbnail EP-002 (setelah reset kuota YouTube)",
+    "kind": "schedule",
+    "schedule_type": "once",
+    "at": "2026-11-18T09:15:00Z",
+    "enabled": true,
+    "instructions": "Tambah video EP-002 ke playlist, pasang thumbnail kustom, cek status Short, perbaiki tag typo."
   }
 ]

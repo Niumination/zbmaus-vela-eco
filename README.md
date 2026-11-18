@@ -12,7 +12,7 @@ Repositori ini dibuat untuk menjembatani dan melengkapi dua repositori yang suda
 2. **`zbmaus-vela-secrets`** (Privat): Berisi konfigurasi deployment, file env, kredensial, dan snapshot state tertentu.
 
 ### 🔍 Kesenjangan yang Diisi oleh `zbmaus-vela-eco`:
-- **Team Memory**: Memuat seluruh catatan memori bersama (6 accepted team notes) yang krusial bagi seluruh agen OMB.
+- **Team Memory**: Memuat seluruh catatan memori bersama (11 accepted team notes) yang krusial bagi seluruh agen OMB.
 - **Roster & SOUL Bot Terkini**: Data lengkap 7 bot aktif, ID unik, alokasi model, deskripsi tupoksi, dan instruksi berdiri (SOUL).
 - **Routines & Triggers Aktif**: Daftar rutinitas otomatis (jadwal harian GitHub, interval pemantauan harian, morning brief, dll).
 - **Katalog Integrasi (Connected Apps)**: Pemetaan integrasi aplikasi ekosistem (GitHub, Vercel, YouTube, Kaggle, BoldSign, dsb) tanpa menyertakan token/kredensial.

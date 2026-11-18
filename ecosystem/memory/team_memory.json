@@ -1,26 +1,35 @@
 [
   {
-    "id": "fb_page_kitab_surgawi",
-    "title": "Facebook Page Kitab Surgawi",
+    "id": "asn_admin",
+    "title": "asn-admin",
     "aliases": [
-      "FB Kitab Surgawi",
-      "page kitab surgawi",
-      "facebook kitab surgawi",
-      "1467846356417352"
+      "asn admin",
+      "mesin administrasi ASN"
     ],
-    "date_created": "2026-11-13",
-    "content": "Halaman Facebook resmi channel YouTube Kitab Surgawi (@kitabsurgawi-1357): Page ID 1467846356417352, kategori Komunitas, dibuat 13 Nov 2026, terhubung ke Composio akun 'AM' (Afrizal Munthe). Bot YouTubeGrowth Kitab Surgawi cross-post video native vertikal ke sana otomatis tiap 3 jam (jam 08:00-23:00 waktu China); caption tanpa link keluar, link YouTube selalu di komentar pertama."
+    "date_created": "2026-10-05",
+    "content": "Repo privat Niumination/asn-admin (Python, branch main) adalah 'Mesin Produksi Administrasi ASN' Diskominfo Aceh Tengah: Jalur A naskah dinas, Jalur B kinerja ASN/SKP, Jalur C administrasi harian; punya gate keamanan pre-commit + CI. Bot AsnAdmin (General) yang menanganinya."
   },
   {
-    "id": "karantina_video_teknologi_kitab_surgawi",
-    "title": "Karantina video teknologi di channel Kitab Surgawi",
+    "id": "zbmaus_ecosystem",
+    "title": "zbmaus",
     "aliases": [
-      "karantina kitab surgawi",
-      "video non-dakwah privat",
-      "channel mix fix"
+      "ekosistem zbmaus",
+      "openmausbot",
+      "vps"
     ],
-    "date_created": "2026-11-12",
-    "content": "DIREVISI: keputusan karantina yang disetujui pagi 12 Nov 2026 diurungkan oleh user sore yang sama — keempat video non-dakwah @kitabsurgawi-1357 (S1grgLepz9M, dbw5KVA75q8, o7sfWan7I8M — MATA Watchdog; E94_M2quMpo — 9Router) dikembalikan ke PUBLIC via YouTube API. Status efektif: video teknologi tetap tayang publik di channel; isu channel mix masih ada namun tanpa aksi karantina."
+    "date_created": "2026-10-28",
+    "content": "The user's OpenMausBot ecosystem is named 'zbmaus'. It consists of bots, routines/triggers, rooms, memory, skills, connected apps, and data tools running on a VPS (maus.abstract.biz.id). The user's GitHub account is Niumination with ~150 repos, many of which relate to this ecosystem (omb-lightvela, ecosystem-omb, ecosystem-config, brain, mirai, hermes-agent, etc.)."
+  },
+  {
+    "id": "nova_bot_for_new_duties",
+    "title": "Nova bot for new duties integration",
+    "aliases": [
+      "nova bot",
+      "tupoksi baru",
+      "ecosystem integration"
+    ],
+    "date_created": "2026-11-01",
+    "content": "Created bot 'Nova' (Spesialis Tupoksi Baru & Integrasi Ekosistem) in General to handle new duties emerging in zbmaus ecosystem, based on studied patterns from 7 repos: ZimZilla, google/elephant-goldfish-model, aicodeking/leanrea, morluto/rea, multica-ai/andrej-karpathy-skills, NandhaKishorM/laya, ipenywis/laya-ultrafast."
   },
   {
     "id": "kitab_surgawi_channel_mix",
@@ -35,35 +44,78 @@
     "content": "Sumber: YOUTUBE_QUERY_ANALYTICS channel==MINE + judul video via oEmbed pada rutinitas harian 10 November 2026. Analisis keseimbangan niche dan konten campuran pada channel."
   },
   {
-    "id": "asn_admin",
-    "title": "asn-admin",
+    "id": "karantina_video_teknologi_kitab_surgawi",
+    "title": "Karantina video teknologi di channel Kitab Surgawi",
     "aliases": [
-      "asn admin",
-      "mesin administrasi ASN"
+      "karantina kitab surgawi",
+      "video non-dakwah privat",
+      "channel mix fix"
     ],
-    "date_created": "2026-10-05",
-    "content": "Repo privat Niumination/asn-admin (Python, branch main) adalah 'Mesin Produksi Administrasi ASN' Diskominfo Aceh Tengah: Jalur A naskah dinas, Jalur B kinerja ASN/SKP, Jalur C administrasi harian; punya gate keamanan pre-commit + CI. Bot AsnAdmin (General) yang menanganinya."
+    "date_created": "2026-11-12",
+    "content": "DIREVISI: keputusan karantina yang disetujui pagi 12 Nov 2026 diurungkan oleh user sore yang sama — keempat video non-dakwah @kitabsurgawi-1357 (S1grgLepz9M, dbw5KVA75q8, o7sfWan7I8M — MATA Watchdog; E94_M2quMpo — 9Router) dikembalikan ke PUBLIC via YouTube API. Status efektif: video teknologi tetap tayang publik di channel; isu channel mix masih ada namun tanpa aksi karantina."
   },
   {
-    "id": "nova_bot_for_new_duties",
-    "title": "Nova bot for new duties integration",
+    "id": "fb_page_kitab_surgawi",
+    "title": "Facebook Page Kitab Surgawi",
     "aliases": [
-      "nova bot",
-      "tupoksi baru",
-      "ecosystem integration"
+      "FB Kitab Surgawi",
+      "page kitab surgawi",
+      "facebook kitab surgawi",
+      "1467846356417352"
     ],
-    "date_created": "2026-11-01",
-    "content": "Created bot 'Nova' (Spesialis Tupoksi Baru & Integrasi Ekosistem) in General to handle new duties emerging in zbmaus ecosystem, based on studied patterns from 7 repos: ZimZilla, google/elephant-goldfish-model, aicodeking/leanrea, morluto/rea, multica-ai/andrej-karpathy-skills, NandhaKishorM/laya, ipenywis/laya-ultrafast."
+    "date_created": "2026-11-13",
+    "content": "Halaman Facebook resmi channel YouTube Kitab Surgawi (@kitabsurgawi-1357): Page ID 1467846356417352, kategori Komunitas, dibuat 13 Nov 2026, terhubung ke Composio akun 'AM' (Afrizal Munthe). Bot YouTubeGrowth Kitab Surgawi cross-post video native vertikal ke sana otomatis tiap 3 jam (jam 08:00-23:00 waktu China); caption tanpa link keluar, link YouTube selalu di komentar pertama."
   },
   {
-    "id": "zbmaus_ecosystem",
-    "title": "zbmaus",
+    "id": "standardisasi_model_ai_tim_general",
+    "title": "Standardisasi Model AI Tim General",
     "aliases": [
-      "ekosistem zbmaus",
-      "openmausbot",
-      "vps"
+      "standar model bot omb",
+      "model fallback tim general"
     ],
-    "date_created": "2026-10-28",
-    "content": "The user's OpenMausBot ecosystem is named 'zbmaus'. It consists of bots, routines/triggers, rooms, memory, skills, connected apps, and data tools running on a VPS (maus.abstract.biz.id). The user's GitHub account is Niumination with ~150 repos, many of which relate to this ecosystem (omb-lightvela, ecosystem-omb, ecosystem-config, brain, mirai, hermes-agent, etc.)."
+    "date_created": "2026-11-15",
+    "content": "Seluruh bot spesialis (YouTubeGrowth, AsnAdmin, Nova, ZbmausHumanoid-Vercel, IslamicEdu Kids) dialihkan ke model agnes/agnes-2.5-flash pada openaiCompat untuk mencegah kendala masa uji coba habis (beam free 404) dan limit kuota gratis OpenCode. ZB tetap menggunakan gemini-3.8-flash pada Antigravity."
+  },
+  {
+    "id": "prinsip_isolasi_ekosistem_zbmaus",
+    "title": "Prinsip Isolasi Ekosistem zbmaus",
+    "aliases": [
+      "isolasi ekosistem zbmaus",
+      "larangan sentuh repo luar"
+    ],
+    "date_created": "2026-11-15",
+    "content": "Seluruh bot di tim zbmaus dilarang keras ikut campur, memodifikasi, mengelola, atau mencampuradukkan repositori dan proyek dari ekosistem lain (termasuk ekosistem LightVela, mirai, hermes, dsb). Operasi dan dokumentasi zbmaus dibatasi strictly hanya pada repo dan aset resmi zbmaus: zbmaus-vela, zbmaus-vela-secrets, zbmaus-vela-eco, asn-admin, dan zbmaus-humanoid."
+  },
+  {
+    "id": "struktur_repositori_ekosistem_zbmaus",
+    "title": "Struktur Repositori Ekosistem zbmaus",
+    "aliases": [
+      "pemetaan repo ekosistem omb",
+      "peran repo zbmaus",
+      "batas ekosistem zbmaus"
+    ],
+    "date_created": "2026-11-15",
+    "content": "(1) zbmaus-vela (publik): blueprint infrastruktur VPS zbmaus. (2) zbmaus-vela-secrets (privat): backup kredensial & env VPS zbmaus. (3) zbmaus-vela-eco (publik): snapshot arsitektur, bot, memory, dan routine ekosistem OMB tanpa rahasia. (4) Proyek spesifik: asn-admin (administrasi dinas) dan zbmaus-humanoid (antarmuka web humanoid terhubung OMB). REPO DI LUAR ZBMAUS: Niu-Humanoid, mira-humanoid, apex-humanoid-rebuild, lightvela, ecosystem-config, dan mirai adalah milik ekosistem LightVela, BUKAN bagian ekosistem zbmaus."
+  },
+  {
+    "id": "arah_produksi_konten_kitab_surgawi",
+    "title": "Arah Produksi Konten & Mesin Kitab Surgawi",
+    "aliases": [
+      "arah produksi kitab surgawi",
+      "variasi visual reels",
+      "upgrade mesin produksi kitab surgawi"
+    ],
+    "date_created": "2026-11-15",
+    "content": "Setiap Senin 07:00 WIB disusun jadwal lengkap, riset topik/dalil, dan kurasi aset untuk seminggu penuh. Konten harian Reels/Shorts diperkaya variasi visual (motion graphic, 3D/layered parallax, tipografi kinetik). Dokumenter bergaya Netflix diperkaya aset visual. Peningkatan tools dan mesin produksi disatukan dengan evaluasi harian 15:30 WIB."
+  },
+  {
+    "id": "jadwal_rilis_dokumenter_kitab_surgawi",
+    "title": "Jadwal Rilis Dokumenter Kitab Surgawi",
+    "aliases": [
+      "jadwal dokumenter islami",
+      "rilis dokumenter kitab surgawi"
+    ],
+    "date_created": "2026-11-15",
+    "content": "Seri Dokumenter Islami di channel Kitab Surgawi diubah dari mingguan menjadi 2 kali seminggu (Senin & Kamis pukul 10:00 WIB), lengkap dengan klip Shorts untuk mendongkrak distribusi penonton."
   }
 ]
