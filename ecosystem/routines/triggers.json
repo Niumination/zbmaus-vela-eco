@@ -1,7 +1,7 @@
 {
-  "version": "1.3.0",
-  "updated_at": "2026-11-19T12:15:00+08:00",
-  "source": "State aktual OpenMausBot per 19 Nov 2026 12:15 WIB (sinkronisasi penuh manual oleh ZB)",
+  "version": "1.4.0",
+  "updated_at": "2026-11-19T12:45:00+08:00",
+  "source": "State aktual OpenMausBot per 19 Nov 2026 12:45 WIB (verifikasi penuh + penggabungan backup oleh ZB)",
   "summary": {
     "active_routines": 14,
     "archived_one_off": 10,
@@ -15,12 +15,12 @@
     "active_interval": 2,
     "active_webhook": 1
   },
-  "note": "Instruksi disimpan lengkap. Dua routine produksi (aa2deb00, 15714d6a) ditandai instructions_truncated_in_source karena teks aslinya terpotong oleh batas sistem di sumber — rujuk thread bot terkait untuk detail sisa. Rutinitas sekali-jalan lama (14-19 Nov) dipindah ke 'archived_one_off'.",
+  "note": "Instruksi disimpan lengkap. Dua routine produksi (aa2deb00, 15714d6a) ditandai instructions_truncated_in_source karena teks aslinya terpotong batas sistem. Routine sinkronisasi harian kini digabung dengan backup penuh ekosistem.",
   "active_routines": [
     {
       "id": "e4394ce5-cdc6-46ea-8e28-90c33ea70355",
       "bot": "ZB",
-      "name": "Sinkronisasi & Pembaruan Harian zbmaus-vela-eco",
+      "name": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
       "kind": "schedule",
       "schedule_type": "cron",
       "expression": "0 23 * * *",
@@ -28,7 +28,7 @@
       "enabled": true,
       "continuity": false,
       "timeout_minutes": 60,
-      "instructions": "Tugas harian (pukul 23:00 WIB): perbarui dan sinkronisasikan seluruh state dinamis ekosistem OpenMausBot ke repositori GitHub Niumination/zbmaus-vela-eco:\n\n1. KUMPULKAN STATE EKOSISTEM TERBARU:\n   - Ambil daftar seluruh bot aktif beserta profil, model, dan role dari sistem.\n   - Ambil SOUL.md dan catatan memori permanen (MEMORY.md) dari seluruh bot.\n   - Ambil seluruh catatan memori tim (General team memory) termasuk keputusan terbaru.\n   - Ambil seluruh rutinitas (schedules) dan triggers yang aktif dari semua bot.\n   - Ambil daftar tools, skills yang terpasang, serta katalog aplikasi terhubung.\n   - Ambil catatan evaluasi dan perkembangan mesin produksi.\n2. AUDIT KELENGKAPAN & SANITASI KREDENSIAL:\n   - Pastikan tidak ada komponen ekosistem baru yang tertinggal (periksa apakah ada bot baru, routine baru, atau memory baru).\n   - Filter ketat: pastikan 100% bebas dari token API, kata sandi, cookie, private key, maupun variabel lingkungan sensitif.\n3. CATAT LOG PERKEMBANGAN HARIAN:\n   - Tulis ringkasan perubahan dan pencapaian hari tersebut ke file changelog / log perkembangan harian di repo.\n4. COMMIT & PUSH KE GITHUB:\n   - Perbarui file-file terkait di direktori ecosystem/ dan dorong pembaruan ke repositori Niumination/zbmaus-vela-eco di branch main.\n5. LAPORKAN:\n   - Berikan laporan ringkas satu paragraf di chat mengenai apa saja file yang diperbarui dan disinkronkan malam itu."
+      "instructions": "Tugas harian pukul 23:00 WIB (Asia/Jakarta): perbarui, sinkronisasikan, dan cadangkan SELURUH state ekosistem zbmaus/OMB ke GitHub Niumination. Urutan wajib: kumpulkan → audit → tulis eco → backup secrets → verifikasi. Jangan lewatkan langkah karena dianggap kecil.\n\n1. INVENTARISASI LENGKAP — kumpulkan dari semua sumber ini, centang satu per satu:\n   a. Bot (7): ZB (chief), AsnAdmin, ZbmausHumanoid-Vercel, YouTubeGrowth Kitab Surgawi, IslamicEdu Kids, Kaggle-Qwen, Nova. Tiap bot: role/deskripsi, model default, model thread aktif bila beda dari default, department. Ambil SOUL.md dan MEMORY.md masing-masing (bot lain: minta via koordinasi/consult atau baca lewat akses chief).\n   b. Routine & automation SEMUA bot: panggil daftar trigger untuk ZB dan untuk tiap bot lain lewat for_bot_id — mencakup schedule, interval, webhook, dan app-event. Catat nama, jadwal + timezone, status enabled/paused, instruksi lengkap, continuity/overlap, timeout, dan kegagalan/attempt terakhir.\n   c. Team memory General (11+ catatan) beserta alias dan tanggal.\n   d. Skill terpasang: omb-ecosystem-sync, omb-routine-scheduling.\n   e. Aplikasi terhubung: GitHub, YouTube, Facebook, Instagram, Gmail, Calendar, Slack, Notion, Composio, Vercel, Kaggle, BoldSign, Data Engine.\n   f. Room/channel bersama beserta daftar anggotanya (jika ada).\n   g. Repo ekosistem: zbmaus-vela, zbmaus-vela-secrets, zbmaus-vela-eco, asn-admin, zbmaus-humanoid — catat keberadaan & perannya. JANGAN sentuh repo luar zbmaus (LightVela, mirai, hermes, apex, ecosystem-config).\n   h. Mesin produksi Kitab Surgawi: detail teknis (ffmpeg 2-pass, jalur upload uguu.se→BOLDSIGN→multipart, edge-tts, parameter render, aturan dalil, jadwal dokumenter Senin/Kamis 10:00 WIB).\n\n2. AUDIT & SANITASI:\n   - Bandingkan inventaris di atas dengan isi repo eco & secrets; tandai yang belum tercatat atau sudah usang.\n   - Filter ketat: repo publik (eco) 100% bebas token API, password, cookie, private key, dan env sensitif. Kredensial tidak perlu ikut ke repo mana pun.\n\n3. CHANGELOG: tulis entri hari ini di CHANGELOG.md — routine yang berjalan/gagal/retry, perubahan bot & model, perubahan struktur, dan hasil verifikasi backup. Sebutkan tool yang gagal apa adanya; jangan klaim selesai bila commit belum ter-push.\n\n4. TULIS KE ECO: commit perubahan ke Niumination/zbmaus-vela-eco (branch main) — bots.json, triggers.json, connected_apps.json, team_memory, skills/catalog.md, souls/, mesin-produksi.md, CHANGELOG.md. Verifikasi tiap write dengan baca ulang; catat sha & hash commit.\n\n5. BACKUP KE SECRETS: SETELAH commit eco berhasil, cadangkan ke Niumination/zbmaus-vela-secrets — perbarui bots/INDEX.json dan tulis catatan sinkronisasi bertanggal. JANGAN mengubah file di credentials/ dan env/, dan JANGAN menimpa omb-state-*.json (state internal OMB terenkripsi).\n\n6. VERIFIKASI AKHIR: baca ulang file kunci di kedua repo, cocokkan dengan checklist langkah 1, dan laporkan: file yang diubah, hash commit,serta bagian yang masih kurang/gagal. Jika ada tool yang ditolak atau gagal, sebutkan eksplisit — laporan bukan execution receipt bila commit belum ter-push."
     },
     {
       "id": "a008e49f-c23a-405a-8fa6-29b9818b0774",
