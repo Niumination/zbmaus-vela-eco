@@ -25,7 +25,7 @@ Semua perubahan ekosistem OpenMausBot (zbmaus) dicatat di bawah ini.
 
 ### Backup Ekosistem
 - `zbmaus-vela-secrets` diperbarui: indeks bot dan state routine disinkronkan ke kondisi aktual 19 Nov.
-- Belum ada automation khusus untuk backup penuh ekosistem (lihat laporan ke user).
+- **Automation backup penuh kini aktif**: routine `Sinkronisasi & Backup Harian Ekosistem zbmaus` (cron `0 23 * * *`, Asia/Jakarta) menggabungkan sinkronisasi eco + cadangan secrets dalam satu jalur. Urutan: kumpulkan seluruh state (7 bot, semua routine 4 bot, 11 memory, 12 apps, 2 skill, 5 repo, mesin produksi) → audit/sanitasi → tulis eco → backup secrets → verifikasi. Kredensial & `omb-state-*.json` dikecualikan.
 
 ---
 
@@ -58,4 +58,4 @@ Semua perubahan ekosistem OpenMausBot (zbmaus) dicatat di bawah ini.
 
 ---
 
-*File ini diperbarui oleh routine Sinkronisasi Harian zbmaus-vela-eco setiap pukul 23:00 WIB, dan sinkronisasi penuh manual bila diperlukan.*
+*File ini diperbarui oleh routine Sinkronisasi & Backup Harian Ekosistem zbmaus setiap pukul 23:00 WIB, dan sinkronisasi penuh manual bila diperlukan.*
