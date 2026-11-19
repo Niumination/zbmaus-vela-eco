@@ -23,6 +23,13 @@
       "status": "connected"
     },
     {
+      "name": "Instagram",
+      "provider": "Composio (Abstract account)",
+      "target": "@zhall_abstract (ig_user_id me)",
+      "scope": "Reels publishing for Kitab Surgawi cross-post",
+      "status": "connected"
+    },
+    {
       "name": "Vercel",
       "provider": "Composio",
       "target": "zbmaus-humanoid.vercel.app",
@@ -40,7 +47,35 @@
       "name": "BoldSign",
       "provider": "Composio",
       "target": "E-signature workflows",
-      "scope": "Document signature automation",
+      "scope": "Document signature automation + file staging (s3key) for media upload",
+      "status": "connected"
+    },
+    {
+      "name": "Gmail",
+      "provider": "Composio",
+      "target": "User mailbox",
+      "scope": "Email triage (Keep an eye on my day)",
+      "status": "connected"
+    },
+    {
+      "name": "Google Calendar",
+      "provider": "Composio",
+      "target": "User calendar",
+      "scope": "Meeting prep (Keep an eye on my day)",
+      "status": "connected"
+    },
+    {
+      "name": "Slack",
+      "provider": "Composio",
+      "target": "User workspace",
+      "scope": "Team notifications",
+      "status": "connected"
+    },
+    {
+      "name": "Notion",
+      "provider": "Composio",
+      "target": "User workspace",
+      "scope": "Notes & knowledge base",
       "status": "connected"
     },
     {

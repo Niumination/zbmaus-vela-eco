@@ -4,6 +4,31 @@ Semua perubahan ekosistem OpenMausBot (zbmaus) dicatat di bawah ini.
 
 ---
 
+## 2026-11-19
+
+### Sinkronisasi Penuh (manual oleh ZB)
+- **Sinkronisasi menyeluruh** ke `zbmaus-vela-eco` dan `zbmaus-vela-secrets`: seluruh state ekosistem diperbarui tanpa komponen tertinggal, tetap 100% bebas kredensial sensitif di repo publik.
+- `ecosystem/routines/triggers.json` dinaikkan ke v1.3.0: **14 routine aktif** dengan instruksi lengkap + **10 routine sekali-jalan terarsip**.
+  - Routine baru 19 Nov yang sebelumnya tertinggal: **Upload EP-003 to YouTube after quota reset** (2f8d2271) dan **Kitab Surgawi: tambah Short ke playlist & cek status** (5630e281).
+  - Dua instruksi produksi (Monitoring aa2deb00, Cross-post 15714d6a) ditandai `instructions_truncated_in_source` karena teks aslinya terpotong batas sistem.
+- File baru `ecosystem/routines/mesin-produksi.md`: dokumentasi lengkap pipeline produksi (ffmpeg 2-pass, jalur upload tmpfiles/uguu→BOLDSIGN→multipart, edge-tts, aturan dalil, cross-post, balasan komentar, evaluasi, jadwal mingguan) — sebelumnya hanya tersimpan sebagai ringkasan 1-3 kalimat.
+
+### Routine & Performa
+- **Monitoring & Produksi Harian Kitab Surgawi** (19 Nov): short "Doa Keluar Rumah" tayang (1CViKufzdmQ, oEmbed 200), kuota YouTube habis setelah upload → playlist/EP-003 dijadwalkan otomatis. Run ditandai failed karena model `opencode/glm-5.3-flash-free` tidak ditemukan.
+- **Produksi Dokumenter EP-003 "Rempah & Sutra"** (19 Nov): render selesai; upload YouTube ditunda kuota, Short A/B sudah tayang di Facebook & Instagram.
+- **Balasan Komentar Kitab Surgawi** (19 Nov): tidak dapat dijalankan — OAuth YouTube mengembalikan 403 (token ter-revoke); perlu reconnect akun di Composio.
+- **Cross-post FB&IG** (19 Nov): berjalan normal, tidak ada konten baru yang perlu disebar.
+
+### Perubahan Bot & Model
+- Model default YouTubeGrowth saat ini `opencode/glm-5.3-flash-free` (opencodeGo) bermasalah di runtime; disarankan kembali ke `agnes/agnes-2.5-flash` sesuai standar tim.
+- Soul `youtubegrowth-kitab-surgawi.md` diselaraskan dengan model aktual.
+
+### Backup Ekosistem
+- `zbmaus-vela-secrets` diperbarui: indeks bot dan state routine disinkronkan ke kondisi aktual 19 Nov.
+- Belum ada automation khusus untuk backup penuh ekosistem (lihat laporan ke user).
+
+---
+
 ## 2026-11-18
 
 ### Routine & Performa
@@ -33,4 +58,4 @@ Semua perubahan ekosistem OpenMausBot (zbmaus) dicatat di bawah ini.
 
 ---
 
-*File ini diperbarui secara otomatis oleh routine Sinkronisasi Harian zbmaus-vela-eco setiap pukul 23:00 WIB.*
+*File ini diperbarui oleh routine Sinkronisasi Harian zbmaus-vela-eco setiap pukul 23:00 WIB, dan sinkronisasi penuh manual bila diperlukan.*
