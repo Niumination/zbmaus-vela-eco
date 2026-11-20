@@ -2,7 +2,7 @@
 
 **Role**: Spesialis asn-admin (Mesin Administrasi ASN Diskominfo Aceh Tengah)  
 **ID**: `3f3b907a-297d-4cea-92d2-92c276157470`  
-**Current Model**: `nous/reflection/beam-1.0-501b-a23b:free`
+**Current Model**: `agnes/agnes-2.5-flash`
 
 ## Tupoksi & Lingkup Kerja
 - Penanggung jawab repositori privat `Niumination/asn-admin` (Python, branch main).
