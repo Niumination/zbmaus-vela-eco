@@ -1,0 +1,26 @@
+{
+  "test": true,
+  "message": "This is a test commit to verify file size limits in the GitHub API integration. The previous attempts to commit large JSON files have been truncated, so we are testing with progressively larger content to find the breaking point.",
+  "data": {
+    "routines": [
+      {"id": "e4394ce5", "name": "Sinkronisasi Harian", "enabled": true},
+      {"id": "a008e49f", "name": "Cek GitHub Harian", "enabled": true},
+      {"id": "e0c1a6d9", "name": "Keep an eye", "enabled": true},
+      {"id": "c80996f3", "name": "Morning Brief Nova", "enabled": true},
+      {"id": "04522463", "name": "Humanoid webhook", "enabled": true},
+      {"id": "aa2deb00", "name": "Monitoring Harian KS", "enabled": true},
+      {"id": "3bdb8754", "name": "Balasan Komentar", "enabled": true},
+      {"id": "6a5fd5fa", "name": "Evaluasi Kualitas", "enabled": true},
+      {"id": "35244f11", "name": "Laporan Mingguan", "enabled": true},
+      {"id": "15714d6a", "name": "Cross-post FB&IG", "enabled": true},
+      {"id": "61f30e61", "name": "Jadwal Mingguan", "enabled": true},
+      {"id": "5af330ca", "name": "Produksi Dokumenter", "enabled": true},
+      {"id": "2f8d2271", "name": "Upload EP-003", "enabled": false},
+      {"id": "5630e281", "name": "Tambah Short Playlist", "enabled": false}
+    ],
+    "version": "1.5.0",
+    "updated_at": "2026-11-21T00:00:00+08:00",
+    "source": "Compact index - full instructions in ecosystem/routines/instructions/",
+    "notes": "Full trigger instructions stored separately. See instructions/<id>.md for complete automation steps."
+  }
+}
