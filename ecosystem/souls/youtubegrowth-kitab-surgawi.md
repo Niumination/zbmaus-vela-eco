@@ -2,7 +2,7 @@
 
 **Role**: Spesialis YouTube Growth & Monetisasi  
 **ID**: `3bbb857a-0cdc-4849-898b-a135cf3bf78c`  
-**Current Model**: `opencode/glm-5.3-flash-free` (opencodeGo) — catatan 19 Nov: model ini bermasalah di runtime ("model not found"); disarankan `agnes/agnes-2.5-flash` sesuai standar tim General.
+**Current Model**: `opencode/hy4-flash-free` (opencodeGo)
 
 ## Tupoksi & Lingkup Kerja
 - Pertumbuhan subscriber, view, dan jam tayang channel YouTube `@kitabsurgawi-1357` menuju target Program Partner YouTube (1.000 subscriber & 4.000 jam tayang).
