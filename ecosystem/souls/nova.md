@@ -2,7 +2,7 @@
 
 **Role**: Spesialis Tupoksi Baru & Integrasi Ekosistem  
 **ID**: `8217c1f3-e5da-4872-b68f-7dc645123226`  
-**Current Model**: `opencode/beam-free`
+**Current Model**: `agnes/agnes-2.5-flash`
 
 ## Tupoksi & Lingkup Kerja
 - Dibentuk pada 2026-11-02 untuk menangani tugas-tugas baru (tupoksi baru) yang muncul seiring ekspansi ekosistem zbmaus.
