@@ -1,1 +1,28 @@
-ewogICJ2IjogIjEuNS4wIiwKICAidXBkYXRlZCI6ICIyMDI2LTExLTIxVDAwOjAwOjAwKzA4OjAwIiwKICAic3JjIjogIkNvbXBhY3QgaW5kZXgg4oaSIGZ1xsIGluc3RydWN0aW9ucyBpbiBlY29zeXN0ZW0vcm91dGluZXMvaW5zdHJ1Y3Rpb25zLyIsCiAgInN1bSI6IHsidG90YWwiOiAxNCwgImVuYWJsZWQiOiAxMiwgImRpc2FibGVkIjogMiwgImFyY2hpdmVkIjogMTB9LAogICJyb3V0aW5lcyI6IFt7ImlkIjogImU0Mzk0Y2U1LWNkYzYtNDZlYS04ZTI4LTkwYzMzZWE3MDM1NSIsICJib3QiOiAiWkIiLCAibmFtZSI6ICJTaW5rcm9uaXNhcyAmIEJhY2t1cCBIYXJpYW4gRWtvc2lzdGVtIHpibWF1cyIsICJraW5kIjogInNjaGVkdWxlIiwgImVuIjogdHJ1ZSwgImNyb24iOiAiMCAyMyAqICogKiBBc2lhL0pha2FydGEifSwgeyJpZCI6ICJhMDA4ZTQ5Zi1jMjNhLTQwNWEtOGZhNi0yOWI5ODE4YjA3NzQiLCAiYm90IjogIlpCIiwgIm5hbWUiOiAiQ2VrIHBlcnViYWhhbiBHaXRIdWIgaGFyaWFuIiwgImtpbmQiOiAic2NoZWR1bGUiLCAiZW4iOiB0cnVlLCAiY3JvbiI6ICIwIDkgKiAqICogQXNpYS9KYWthcnRhIn0sIHsiaWQiOiAiZTBjMWE2ZDktNzJhNy00NzA1LWEzMGQtMzFhMjk0N2RmMGZkIiwgImJvdCI6ICJaQiIsICJuYW1lIjogIktlZXAgYW4gZXllIG9uIG15IGRheSIsICJraW5kIjogInNjaGVkdWxlIiwgImVuIjogdHJ1ZSwgImludGVydmFsIjogMTV9LCB7ImlkIjogImM4MDk5NmYzLWVlYWQtNDg4YS05NW FkLTAYzM2EwZWMwZWY0IiwgImJvdCI6ICJOb3ZhIiwgIm5hbWUiOiAiTW9ybmluZyBCcmllZiB6Ym1hdXMiLCAia2luZCI6ICJzY2hlZHVsZSIsICJlbiI6IHRydWUsICJ3ZWVrbHkiOiAiMDg6MDAgbW9uZGF5LHR1ZXNkYXksd2VkbmVzZHksdGh1cnNkYXksZnJpZGF5LHNhdHVyZGF5LHN1bmRheSJ9LCB7ImlkIjogIjA0NTIyNDYzLWI5MTctNDg4Ni05NDYyLWY3NGM5ZDgwYjQ1YyIsICJib3QiOiAiWmJtYXVzSHVtYW5vaWQtVmVyY2VsIiwgIm5hbWUiOiAiemJtYXVzLWh1bWFub2lkIGxpdmUgc2l0ZSBjaGF0IiwgImtpbmQiOiAid2ViaG9vayIsICJlbiI6IHRydWV9LCB7ImlkIjogImFhMmRlYjAw. .. [TRUNCATED FOR TOKEN LIMIT]
+{
+  "version": "1.5.0",
+  "updated_at": "2026-11-21T00:00:00+08:00",
+  "source": "Compact index — instruksi lengkap di ecosystem/routines/instructions/<id>.md",
+  "summary": {
+    "total_routines": 14,
+    "enabled": 12,
+    "disabled": 2,
+    "archived_one_off": 10
+  },
+  "note": "Instruksi lengkap disimpan terpisah per routine. File ini hanya indeks.",
+  "routines": [
+    {"id": "e4394ce5-cdc6-46ea-8e28-90c33ea70355", "bot": "ZB", "name": "Sinkronisasi & Backup Harian Ekosistem zbmaus", "kind": "schedule", "cron": "0 23 * * * Asia/Jakarta", "enabled": true},
+    {"id": "a008e49f-c23a-405a-8fa6-29b9818b0774", "bot": "ZB", "name": "Cek perubahan GitHub harian", "kind": "schedule", "cron": "0 9 * * * Asia/Jakarta", "enabled": true},
+    {"id": "e0c1a6d9-72a7-4705-a30d-31a2947df0fd", "bot": "ZB", "name": "Keep an eye on my day", "kind": "schedule", "interval_min": 15, "enabled": true},
+    {"id": "c80996f3-eead-488a-95ad-0b37a0ec0ef4", "bot": "Nova", "name": "Morning Brief zbmaus", "kind": "schedule", "weekly": "08:00 all weekdays", "enabled": true},
+    {"id": "04522463-b917-4886-9462-f74c9d80b45c", "bot": "ZbmausHumanoid-Vercel", "name": "zbmaus-humanoid live site chat", "kind": "webhook", "enabled": true},
+    {"id": "aa2deb00-5c6a-4d99-b1b4-4e65231c0c5b", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Monitoring & Produksi Postingan Harian Kitab Surgawi", "kind": "schedule", "cron": "0 9 * * * Asia/Jakarta", "enabled": true},
+    {"id": "3bdb8754-c92e-480a-a34e-3d712e296e41", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Balasan Komentar Kitab Surgawi", "kind": "schedule", "interval_min": 120, "enabled": true},
+    {"id": "6a5fd5fa-6aca-4ca5-812c-a8e62d1b8daa", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Evaluasi Kualitas Harian & Peningkatan Mesin Produksi Kitab Surgawi", "kind": "schedule", "cron": "30 15 * * * Asia/Jakarta", "enabled": true},
+    {"id": "35244f11-3100-4a46-8110-eadc6ac6a75c", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Laporan Performa Mingguan Kitab Surgawi (YouTube vs Facebook)", "kind": "schedule", "cron": "0 15 * * 5 Asia/Jakarta", "enabled": true},
+    {"id": "15714d6a-26be-4b6e-b0e2-4c4f532b2081", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Cross-post Kitab Surgawi ke Facebook & Instagram", "kind": "schedule", "interval_min": 180, "enabled": true},
+    {"id": "61f30e61-c25a-49e9-86bb-7f5cbf3f5296", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Penyusunan Jadwal & Materi Tayang Mingguan Kitab Surgawi", "kind": "schedule", "cron": "0 7 * * 1 Asia/Jakarta", "enabled": true},
+    {"id": "5af330ca-15f2-41f8-8c83-a2cf1dd9e1d6", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Produksi & Publikasi Dokumenter Islami Kitab Surgawi", "kind": "schedule", "cron": "0 10 * * 1,4 Asia/Jakarta", "enabled": true},
+    {"id": "2f8d2271-7db0-4eb9-8029-f21b8aa69cde", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Upload EP-003 to YouTube after quota reset", "kind": "schedule", "once": "2026-11-19T09:15:00Z", "enabled": false},
+    {"id": "5630e281-0128-4d6c-aa2d-7f3c17265e69", "bot": "YouTubeGrowth Kitab Surgawi", "name": "Kitab Surgawi: tambah Short ke playlist & cek status", "kind": "schedule", "once": "2026-11-19T08:15:00Z", "enabled": false}
+  ]
+}
