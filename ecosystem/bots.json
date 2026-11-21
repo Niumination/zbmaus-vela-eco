@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "updated_at": "2026-11-21T00:00:00+08:00",
+  "version": "1.1.1",
+  "updated_at": "2026-11-21T14:35:00+08:00",
   "department": "General",
   "chief_bot": {
     "name": "ZB",
@@ -39,7 +39,8 @@
       "role": "Spesialis YouTube Growth & Monetisasi",
       "description": "YouTube Growth & Monetization specialist for 'Kitab Surgawi' (youtube.com/@kitabsurgawi-1357), Indonesian Islamic content. Mission: grow subscribers/views and generate YouTube income.",
       "status": "active",
-      "instance": "opencodeGo"
+      "instance": "opencodeGo",
+      "repository": "Niumination/zbmaus-kitab-surgawi"
     },
     {
       "name": "IslamicEdu Kids",
