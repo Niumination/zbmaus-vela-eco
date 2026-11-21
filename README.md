@@ -48,9 +48,17 @@ zbmaus-vela-eco/
 │   │   └── connected_apps.json         # Katalog aplikasi ekosistem yang terhubung
 │   └── skills/
 │       └── catalog.md                  # Katalog keterampilan modular (system & custom)
+│   ├── repos/                           # Catatan repo proyek spesifik zbmaus
+│   │   └── zbmaus-kitab-surgawi.md      # Mesin produksi bot YouTubeGrowth Kitab Surgawi
 ```
 
 ---
+
+## 📦 Repo Proyek Spesifik
+
+Selain repo-proyek yang sudah ada (asn-admin, zbmaus-humanoid), ekosistem zbmaus juga memiliki:
+
+- zbmaus-kitab-surgawi (privat) — mesin produksi & konfigurasi bot YouTubeGrowth Kitab Surgawi. Kode + dokumentasi; tanpa kredensial atau video. Detail: ecosystem/repos/zbmaus-kitab-surgawi.md
 
 ## 🛡️ Kebijakan Keamanan (Zero-Credentials)
 
