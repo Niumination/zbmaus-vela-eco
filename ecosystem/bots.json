@@ -1,1 +1,92 @@
-test content
+{
+  "version": "1.1.0",
+  "updated_at": "2026-11-24T07:50:00+07:00",
+  "source": "Rutinitas Sinkronisasi & Backup Harian Ekosistem zbmaus (ZB) — 24 Nov 2026",
+  "department": "General",
+  "chief_bot": {
+    "name": "ZB",
+    "alias": "MausBot",
+    "role": "Chief of Staff & Personal Assistant",
+    "id": "e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7",
+    "description": "Personal bot in OpenMausBot and helper for everything in OMB. Coordinates specialists, triggers routines, manages team setup, memory, and Data tools."
+  },
+  "teammates": [
+    {
+      "name": "ZB",
+      "id": "e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7",
+      "model": "tidepool-alpha-free",
+      "role": "Chief of Staff & Personal Assistant (uruf)",
+      "department": "General",
+      "triggers": [
+        { "id": "e4394ce5-cdc6-46ea-8e28-90c33ea70355", "name": "Sinkronisasi & Backup Harian Ekosistem zbmaus", "kind": "schedule", "cron": "0 23 * * * Asia/Jakarta", "enabled": true, "failureStreak": 0, "lastRun": "2026-11-23T00:00:00Z" },
+        { "id": "a008e49f-c23a-405a-8fa6-29b9818b0774", "name": "Cek perubahan GitHub harian", "kind": "schedule", "cron": "0 9 * * * Asia/Jakarta", "enabled": true, "failureStreak": 8, "lastRun": "2026-11-24T02:00:00Z" },
+        { "id": "e0c1a6d9-72a7-4705-a30d-31a2947df0fd", "name": "Keep an eye on my day", "kind": "interval", "intervalMin": 15, "enabled": true }
+      ]
+    },
+    {
+      "name": "AsnAdmin",
+      "id": "3f3b907a-297d-4cea-92d2-92c276157470",
+      "model": "agnes/agnes-2.5-flash",
+      "role": "Spesialis asn-admin (Mesin Administrasi ASN)",
+      "description": "Spesialis repo privat Niumination/asn-admin — mesin produksi administrasi ASN Diskominfo Aceh Tengah: naskah dinas, SKP/eKinerja, administrasi harian, plus gate keamanan repo.",
+      "department": "General",
+      "triggers": []
+    },
+    {
+      "name": "ZbmausHumanoid-Vercel",
+      "id": "c3ec552d-e63d-45cd-ba95-ce0f6e95d3f9",
+      "model": "agnes/agnes-2.5-flash",
+      "role": "Spesialis zbmaus-humanoid (asisten humanoid interaktif yang terhubung ke OMB)",
+      "description": "Asisten humanoid interaktif yang terhubung ke OMB. Monitor, maintain, dan kembangkan zbmaus-humanoid.vercel.app (Vite + React + TypeScript).",
+      "department": "General",
+      "triggers": [
+        { "id": "04522463-b917-4886-9462-f74c9d80b45c", "name": "zbmaus-humanoid live site chat", "kind": "webhook", "enabled": true, "calls": 17, "lastCalledAt": "2026-11-05T18:00:10.907Z" }
+      ]
+    },
+    {
+      "name": "YouTubeGrowth Kitab Surgawi",
+      "id": "3bbb857a-0cdc-4849-898b-a135cf3bf78c",
+      "model": "opencode/hy4-flash-free",
+      "role": "YouTube Growth & Monetization specialist for Kitab Surgawi",
+      "description": "YouTube Growth & Monetization specialist for 'Kitab Surgawi' (youtube.com/@kitabsurgawi-1357), Indonesian Islamic content. Mission: grow subscribers/views and generate YouTube income.",
+      "department": "General",
+      "triggers": [
+        { "id": "4fbc7fa4-03ca-4fa1-aec0-5a8025fc8514", "name": "Penjaga Kualitas Kitab Surgawi — review harian", "kind": "schedule", "cron": "45 15 * * * Asia/Jakarta", "enabled": true, "continuity": true, "lastRun": "2026-11-23T00:45:00Z" },
+        { "id": "2f8d2271-7db0-4eb9-8029-f21b8aa69cde", "name": "Upload EP-003 to YouTube after quota reset", "kind": "schedule", "once": "2026-11-19T09:15:00Z", "enabled": false, "lastRun": "2026-11-19T00:15:00Z" },
+        { "id": "5630e281-0128-4d6c-aa2d-7f3c17265e69", "name": "Kitab Surgawi: tambah Short ke playlist & cek status", "kind": "schedule", "once": "2026-11-19T08:15:00Z", "enabled": false, "lastRun": "2026-11-19T00:15:00Z" },
+        { "id": "61f30e61-c25a-49e9-86bb-7f5cbf3f5296", "name": "Penyusunan Jadwal & Materi Tayang Mingguan Kitab Surgawi", "kind": "schedule", "cron": "0 7 * * 1 Asia/Jakarta", "enabled": true, "lastRun": "2026-11-23T00:00:00Z" },
+        { "id": "5af330ca-15f2-41f8-8c83-a2cf1dd9e1d6", "name": "Produksi & Publikasi Dokumenter Islami Kitab Surgawi", "kind": "schedule", "cron": "0 10 * * 1,4 Asia/Jakarta", "enabled": true }
+      ]
+    },
+    {
+      "name": "IslamicEdu Kids",
+      "id": "c927d946-7a7e-4a77-b0b5-e4e9b6942fb7",
+      "model": "opencode/hy4-flash-free",
+      "role": "Spesialis Pendidikan Agama Islam Anak Usia 2-4 Tahun",
+      "description": "You are a friendly Islamic education specialist for children ages 2-4. Help parents teach Islam to toddlers/preschoolers simply.",
+      "department": "General",
+      "triggers": []
+    },
+    {
+      "name": "Kaggle-Qwen",
+      "id": "0f9c19ec-26e5-4e36-91dd-3d4870bfcfff",
+      "model": "qwen3.8-flash-next-gyro-gyro-s",
+      "role": "Asisten Ringan (Model Kaggle Qwen3.8-Flash-Next Gyro-S)",
+      "description": "Lightweight assistant running on the Qwen3.8-Flash-Next Gyro-S model via Kaggle T4 GPU (32k context window). Work only on short, focused tasks.",
+      "department": "General",
+      "triggers": []
+    },
+    {
+      "name": "Nova",
+      "id": "8217c1f3-e5da-4872-b68f-7dc645123226",
+      "model": "opencode/hy4-flash-free",
+      "role": "Spesialis Tupoksi Baru & Integrasi Ekosistem",
+      "description": "You are Nova, specialist for new duties (tupoksi baru) & ecosystem integration in zbmaus (OpenMausBot).",
+      "department": "General",
+      "triggers": [
+        { "id": "c80996f3-eead-488a-95ad-0b37a0ec0ef4", "name": "Morning Brief zbmaus", "kind": "schedule", "weekly": "08:00 all weekdays", "enabled": true, "failureStreak": 0, "lastRun": "2026-11-24T00:00:00Z" }
+      ]
+    }
+  ],
+  "stats": { "bots": 7, "triggers": 9 }
+}
