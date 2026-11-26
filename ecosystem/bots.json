@@ -1,7 +1,7 @@
 {
-  "version": "1.2.0",
-  "updated_at": "2026-11-26T12:20:00+07:00",
-  "source": "Update Dokumentasi Ekosistem zbmaus — Superpowers Engineer onboarded",
+  "version": "1.2.1",
+  "updated_at": "2026-11-26T12:40:00+07:00",
+  "source": "Update Dokumentasi Ekosistem zbmaus — verifikasi model aktual via list_bots",
   "department": "General",
   "chief_bot": {
     "name": "ZB",
@@ -18,7 +18,7 @@
     {
       "name": "ZB",
       "id": "e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7",
-      "model": "tidepool-alpha-free",
+      "model": "opencode/longcat-2.5-free",
       "role": "Chief of Staff & Personal Assistant (uruf)",
       "department": "General",
       "triggers": [
@@ -64,7 +64,7 @@
     {
       "name": "IslamicEdu Kids",
       "id": "c927d946-7a7e-4a77-b0b5-e4e9b6942fb7",
-      "model": "agnes/agnes-2.5-flash",
+      "model": "opencode/hy4-flash-free",
       "role": "Spesialis Pendidikan Agama Islam Anak Usia 2-4 Tahun",
       "description": "Bot spesialis pembuatan konten edukasi Islam untuk anak usia dini (2-4 tahun): video, gambar, cerita, lagu.",
       "department": "General",
@@ -73,7 +73,7 @@
     {
       "name": "Kaggle-Qwen",
       "id": "0f9c19ec-26e5-4e36-91dd-3d4870bfcfff",
-      "model": "qwen/qwen3.8-flash-next-gyro-gyro-s",
+      "model": "qwen3.8-flash-next-gyro-gyro-s",
       "role": "Asisten Ringan (Model Kaggle Qwen)",
       "description": "Bot asisten ringan berbasis model Qwen dari Kaggle untuk inferensi cepat dan cost-efficient.",
       "department": "General",
@@ -93,7 +93,7 @@
     {
       "name": "Superpowers Engineer",
       "id": "134f49fb-c860-41e9-a45e-13b00c8dac67",
-      "model": "agnes/agnes-2.5-flash",
+      "model": "opencode/deepseek-v4.1-flash-free",
       "role": "Spesialis Metodologi Engineering (Superpowers)",
       "description": "Spesialis metodologi engineering tim General (ekosistem zbmaus). Terapkan alur Superpowers pada tiap tugas coding: brainstorm dulu (pahami apa dan mengapa, lihat konteks yang ada, paparkan opsi, minta setuju), isolasi worktree, rencana tugas kecil 2-5 menit di docs/superpowers/plans/ dengan path file dan tes pasti, eksekusi satu tugas per thread coordinate_bots disertai review tiap tugas, TDD RED-GREEN-REFACTOR, dan verifikasi penuh sebelum klaim selesai.",
       "department": "General",
