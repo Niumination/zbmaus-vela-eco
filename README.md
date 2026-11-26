@@ -7,17 +7,17 @@
 
 ## 🎯 Tujuan Repositori
 
-Repositori ini dibuat untuk menjembatani dan melengkapi dua repositori yang sudah ada sebelumnya:
-1. **`zbmaus-vela`** (Publik): Berisi instruksi instalasi, skrip deployment OS/VPS, unit systemd, dan panduan infrastruktur mentah.
-2. **`zbmaus-vela-secrets`** (Privat): Berisi konfigurasi deployment, file env, kredensial, dan snapshot state tertentu.
+Repositori ini menjembatani dan melengkapi dua repositori sebelumnya:
+1. **`zbmaus-vela`** (Publik): instruksi instalasi, skrip deployment OS/VPS, unit systemd, dan panduan infrastruktur mentah.
+2. **`zbmaus-vela-secrets`** (Privat): konfigurasi deployment, file env, kredensial, dan snapshot state tertentu.
 
-### 🔍 Kesenjangan yang Diisi oleh `zbmaus-vela-eco`:
-- **Team Memory**: Memuat seluruh catatan memori bersama (11 accepted team notes) yang krusial bagi seluruh agen OMB.
-- **Roster & SOUL Bot Terkini**: Data lengkap 7 bot aktif, ID unik, alokasi model, deskripsi tupoksi, dan instruksi berdiri (SOUL).
-- **Routines & Triggers Aktif**: Daftar rutinitas otomatis (jadwal harian GitHub, interval pemantauan harian, morning brief, dll).
-- **Katalog Integrasi (Connected Apps)**: Pemetaan integrasi aplikasi ekosistem (GitHub, Vercel, YouTube, Kaggle, BoldSign, dsb) tanpa menyertakan token/kredensial.
-- **Skills & Prosedur**: Katalog kemampuan kerja modular dan orkestrasi workflow subagen.
-- **Topik Memori Personal & Kebijakan**: Rekaman preferensi bahasa, repositori kerja, dan aturan proyek ekosistem.
+### 🔍 Kesenjangan yang Diisi oleh `zbmaus-vela-eco`
+- **Team Memory**: 13 catatan memori bersama yang krusial bagi seluruh agen OMB.
+- **Roster & SOUL Bot Terkini**: data lengkap **8 bot** aktif, ID unik, alokasi model, deskripsi tupoksi, dan instruksi berdiri (SOUL).
+- **Routines & Triggers Aktif**: rutinitas otomatis (sinkronisasi harian, pemantauan interval, morning brief, produksi Kitab Surgawi, dll).
+- **Katalog Integrasi (Connected Apps)**: pemetaan aplikasi ekosistem (GitHub, Vercel, YouTube, Kaggle, BoldSign, dsb) tanpa token/kredensial.
+- **Skills & Prosedur**: katalog kemampuan modular dan orkestrasi workflow subagen, termasuk `superpowers-workflow`.
+- **Topik Memori Personal & Kebijakan**: preferensi bahasa, repositori kerja, dan aturan proyek ekosistem.
 
 ---
 
@@ -26,8 +26,9 @@ Repositori ini dibuat untuk menjembatani dan melengkapi dua repositori yang suda
 ```text
 zbmaus-vela-eco/
 ├── README.md                           # Dokumentasi utama dan panduan ekosistem
+├── CHANGELOG.md                        # Riwayat perubahan ekosistem
 ├── ecosystem/
-│   ├── bots.json                       # Roster lengkap 7 bot beserta metadata dan status model
+│   ├── bots.json                       # Roster lengkap 8 bot beserta metadata dan status model
 │   ├── architecture/
 │   │   └── overview.md                 # Arsitektur koordinasi General department & hierarki agen
 │   ├── souls/                          # Instruksi berdiri (SOUL) tiap agen
@@ -37,28 +38,42 @@ zbmaus-vela-eco/
 │   │   ├── youtubegrowth-kitab-surgawi.md # Spesialis pertumbuhan channel dakwah
 │   │   ├── islamicedu-kids.md          # Spesialis edukasi Islam usia 2-4 tahun
 │   │   ├── kaggle-qwen.md              # Asisten inferensi ringan Kaggle T4 GPU
-│   │   └── nova.md                     # Integrator tupoksi baru ekosistem (7 pattern)
+│   │   ├── nova.md                     # Integrator tupoksi baru ekosistem
+│   │   └── superpowers-engineer.md     # Spesialis metodologi engineering (Superpowers)
 │   ├── memory/
-│   │   ├── team_memory.json            # 6 catatan memori bersama (format data terstruktur)
+│   │   ├── team_memory.json            # 13 catatan memori bersama (data terstruktur)
 │   │   ├── team_memory.md              # Narasi dan konteks memori tim
-│   │   └── zb_memory.md                # Long-term memory & topic notes (project, github, language)
+│   │   └── zb_memory.md                # Long-term memory & topic notes
 │   ├── routines/
-│   │   └── triggers.json               # Daftar trigger dan otomatisasi terjadwal
+│   │   ├── triggers.json               # Daftar trigger dan otomatisasi terjadwal
+│   │   └── mesin-produksi.md           # Jadwal & pipeline produksi Kitab Surgawi
 │   ├── integrations/
 │   │   └── connected_apps.json         # Katalog aplikasi ekosistem yang terhubung
-│   └── skills/
-│       └── catalog.md                  # Katalog keterampilan modular (system & custom)
-│   ├── repos/                           # Catatan repo proyek spesifik zbmaus
-│   │   └── zbmaus-kitab-surgawi.md      # Mesin produksi bot YouTubeGrowth Kitab Surgawi
+│   ├── skills/
+│   │   └── catalog.md                  # Katalog keterampilan modular (system & custom)
+│   └── repos/                          # Catatan repo proyek spesifik zbmaus
+│       ├── zbmaus-vela.md
+│       ├── zbmaus-vela-secrets.md
+│       ├── zbmaus-vela-eco.md
+│       ├── asn-admin.md
+│       ├── zbmaus-humanoid.md
+│       └── zbmaus-kitab-surgawi.md
 ```
 
 ---
 
-## 📦 Repo Proyek Spesifik
+## 📦 Repo Ekosistem zbmaus
 
-Selain repo-proyek yang sudah ada (asn-admin, zbmaus-humanoid), ekosistem zbmaus juga memiliki:
+| Repo | Visibilitas | Peran |
+|---|---|---|
+| `zbmaus-vela` | Publik | Blueprint & skrip instalasi VPS |
+| `zbmaus-vela-secrets` | Privat | Kredensial, env, snapshot state (tidak pernah dicerminkan ke repo ini) |
+| `zbmaus-vela-eco` | Publik | Snapshot arsitektur, bot, memory, routine (repo ini) |
+| `asn-admin` | Privat | Mesin Produksi Administrasi ASN Diskominfo Aceh Tengah |
+| `zbmaus-humanoid` | Publik | Antarmuka humanoid web (Vercel) |
+| `zbmaus-kitab-surgawi` | Privat | Mesin produksi bot YouTubeGrowth Kitab Surgawi |
 
-- zbmaus-kitab-surgawi (privat) — mesin produksi & konfigurasi bot YouTubeGrowth Kitab Surgawi. Kode + dokumentasi; tanpa kredensial atau video. Detail: ecosystem/repos/zbmaus-kitab-surgawi.md
+Detail per repo: `ecosystem/repos/`.
 
 ## 🛡️ Kebijakan Keamanan (Zero-Credentials)
 
