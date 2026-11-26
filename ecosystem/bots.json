@@ -1,7 +1,7 @@
 {
-  "version": "1.2.1",
-  "updated_at": "2026-11-26T12:40:00+07:00",
-  "source": "Update Dokumentasi Ekosistem zbmaus — verifikasi model aktual via list_bots",
+  "version": "1.3.0",
+  "updated_at": "2026-11-27T00:00:00+07:00",
+  "source": "Rutinitas Sinkronisasi & Backup Harian Ekosistem zbmaus (ZB) — 2026-11-27 (inventarisasi live via daftar bot & trigger)",
   "department": "General",
   "chief_bot": {
     "name": "ZB",
@@ -12,20 +12,52 @@
   },
   "stats": {
     "bots": 8,
-    "triggers": 15
+    "triggers": 15,
+    "enabled": 13,
+    "paused": 2
   },
   "teammates": [
     {
       "name": "ZB",
       "id": "e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7",
       "model": "opencode/longcat-2.5-free",
-      "role": "Chief of Staff & Personal Assistant (uruf)",
+      "role": "Chief of Staff & Personal Assistant",
       "department": "General",
       "triggers": [
-        { "id": "e4394ce5-cdc6-46ea-8e28-90c33ea70355", "name": "Sinkronisasi & Backup Harian Ekosistem zbmaus", "kind": "schedule", "cron": "0 23 * * * Asia/Jakarta", "enabled": true, "failureStreak": 0, "lastRun": "2026-11-23T00:00:00Z" },
-        { "id": "a008e49f-c23a-405a-8fa6-29b9818b0774", "name": "Cek perubahan GitHub harian", "kind": "schedule", "cron": "0 9 * * * Asia/Jakarta", "enabled": true, "failureStreak": 8, "lastRun": "2026-11-24T02:00:00Z" },
-        { "id": "e0c1a6d9-72a7-4705-a30d-31a2947df0fd", "name": "Keep an eye on my day", "kind": "interval", "intervalMin": 15, "enabled": true }
-      ]
+        {
+          "id": "e4394ce5-cdc6-46ea-8e28-90c33ea70355",
+          "name": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 23 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T16:00:00Z",
+          "lastChecked": "2026-11-27",
+          "timeoutMinutes": 60
+        },
+        {
+          "id": "a008e49f-c23a-405a-8fa6-29b9818b0774",
+          "name": "Cek perubahan GitHub harian",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 9 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T02:00:00Z",
+          "lastChecked": "2026-11-27"
+        },
+        {
+          "id": "e0c1a6d9-72a7-4705-a30d-31a2947df0fd",
+          "name": "Keep an eye on my day",
+          "kind": "interval",
+          "enabled": true,
+          "schedule": "every 15 minutes",
+          "failureStreak": 0,
+          "lastRun": null,
+          "lastChecked": "2026-11-27",
+          "timeoutMinutes": 15
+        }
+      ],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "AsnAdmin",
@@ -34,7 +66,8 @@
       "role": "Spesialis asn-admin (Mesin Administrasi ASN)",
       "description": "Spesialis repo privat Niumination/asn-admin — mesin produksi administrasi ASN Diskominfo Aceh Tengah: naskah dinas, SKP/eKinerja, administrasi harian, plus gate keamanan repo.",
       "department": "General",
-      "triggers": []
+      "triggers": [],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "ZbmausHumanoid-Vercel",
@@ -44,8 +77,20 @@
       "description": "Asisten humanoid interaktif yang terhubung ke OMB. Monitor, maintain, dan kembangkan zbmaus-humanoid.vercel.app (Vite + React + TypeScript).",
       "department": "General",
       "triggers": [
-        { "id": "04522463-b917-4886-9462-f74c9d80b45c", "name": "zbmaus-humanoid live site chat", "kind": "webhook", "enabled": true, "calls": 17, "lastCalledAt": "2026-11-05T18:00:10.907Z" }
-      ]
+        {
+          "id": "04522463-b917-4886-9462-f74c9d80b45c",
+          "name": "zbmaus-humanoid live site chat",
+          "kind": "webhook",
+          "enabled": true,
+          "schedule": "webhook",
+          "failureStreak": 0,
+          "lastRun": "2026-11-24T16:35:26.766Z",
+          "lastChecked": "2026-11-27",
+          "calls": 22,
+          "lastCalledAt": "2026-11-24T16:35:26.766Z"
+        }
+      ],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "YouTubeGrowth Kitab Surgawi",
@@ -55,11 +100,120 @@
       "description": "YouTube Growth & Monetization specialist for 'Kitab Surgawi' (youtube.com/@kitabsurgawi-1357), Indonesian Islamic content. Mission: grow subscribers/views and generate YouTube income.",
       "department": "General",
       "triggers": [
-        { "id": "aa2deb00-5c6a-4d99-b1b4-4e65231c0c5b", "name": "Monitoring & Produksi Postingan Harian Kitab Surgawi", "kind": "schedule", "cron": "0 9 * * * Asia/Jakarta", "enabled": true },
-        { "id": "3bdb8754-c92e-480a-a34e-3d712e296e41", "name": "Balasan Komentar Kitab Surgawi", "kind": "schedule", "interval_min": 120, "enabled": true },
-        { "id": "6a5fd5fa-6aca-4ca5-812c-a8e62d1b8daa", "name": "Evaluasi Kualitas Harian & Peningkatan Mesin Produksi Kitab Surgawi", "kind": "schedule", "cron": "30 15 * * * Asia/Jakarta", "enabled": true },
-        { "id": "4fbc7fa4-03ca-4fa1-aec0-5a8025fc8514", "name": "Penjaga Kualitas Kitab Surgawi — review harian", "kind": "schedule", "cron": "45 15 * * * Asia/Jakarta", "enabled": true }
-      ]
+        {
+          "id": "aa2deb00-5c6a-4d99-b1b4-4e65231c0c5b",
+          "name": "Monitoring & Produksi Postingan Harian Kitab Surgawi",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 9 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T02:00:00Z",
+          "lastChecked": "2026-11-27",
+          "continuity": true,
+          "timeoutMinutes": 240
+        },
+        {
+          "id": "15714d6a-26be-4b6e-b0e2-4c4f532b2081",
+          "name": "Cross-post Kitab Surgawi ke Facebook & Instagram",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 12,21 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T14:00:00Z",
+          "lastChecked": "2026-11-27",
+          "timeoutMinutes": 30
+        },
+        {
+          "id": "3bdb8754-c92e-480a-a34e-3d712e296e41",
+          "name": "Balasan Komentar Kitab Surgawi",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 10,20 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T13:00:00Z",
+          "lastChecked": "2026-11-27",
+          "timeoutMinutes": 20
+        },
+        {
+          "id": "6a5fd5fa-6aca-4ca5-812c-a8e62d1b8daa",
+          "name": "Evaluasi Kualitas Harian & Peningkatan Mesin Produksi Kitab Surgawi",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "30 15 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T08:30:00Z",
+          "lastChecked": "2026-11-27",
+          "continuity": true,
+          "timeoutMinutes": 30
+        },
+        {
+          "id": "4fbc7fa4-03ca-4fa1-aec0-5a8025fc8514",
+          "name": "Penjaga Kualitas Kitab Surgawi — review harian",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "45 15 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T08:45:00Z",
+          "lastChecked": "2026-11-27",
+          "continuity": true,
+          "timeoutMinutes": 30
+        },
+        {
+          "id": "35244f11-3100-4a46-8110-eadc6ac6a75c",
+          "name": "Laporan Performa Mingguan Kitab Surgawi (YouTube vs Facebook)",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 15 * * 5 Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-20T08:00:00Z",
+          "lastChecked": "2026-11-27",
+          "continuity": true,
+          "timeoutMinutes": 30
+        },
+        {
+          "id": "61f30e61-c25a-49e9-86bb-7f5cbf3f5296",
+          "name": "Penyusunan Jadwal & Materi Tayang Mingguan Kitab Surgawi",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 7 * * 1 Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-23T00:00:00Z",
+          "lastChecked": "2026-11-27",
+          "timeoutMinutes": 120
+        },
+        {
+          "id": "5af330ca-15f2-41f8-8c83-a2cf1dd9e1d6",
+          "name": "Produksi & Publikasi Dokumenter Islami Kitab Surgawi",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 10 * * 1,4 Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T03:00:00Z",
+          "lastChecked": "2026-11-27",
+          "timeoutMinutes": 240
+        },
+        {
+          "id": "2f8d2271-7db0-4eb9-8029-f21b8aa69cde",
+          "name": "Upload EP-003 to YouTube after quota reset",
+          "kind": "schedule",
+          "enabled": false,
+          "schedule": "once 2026-11-19T09:15:00Z",
+          "failureStreak": 0,
+          "lastRun": "2026-11-19T09:15:00Z",
+          "lastChecked": "2026-11-27"
+        },
+        {
+          "id": "5630e281-0128-4d6c-aa2d-7f3c17265e69",
+          "name": "Kitab Surgawi: tambah Short ke playlist & cek status",
+          "kind": "schedule",
+          "enabled": false,
+          "schedule": "once 2026-11-19T08:15:00Z",
+          "failureStreak": 0,
+          "lastRun": "2026-11-19T08:15:00Z",
+          "lastChecked": "2026-11-27"
+        }
+      ],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "IslamicEdu Kids",
@@ -68,7 +222,8 @@
       "role": "Spesialis Pendidikan Agama Islam Anak Usia 2-4 Tahun",
       "description": "Bot spesialis pembuatan konten edukasi Islam untuk anak usia dini (2-4 tahun): video, gambar, cerita, lagu.",
       "department": "General",
-      "triggers": []
+      "triggers": [],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "Kaggle-Qwen",
@@ -77,7 +232,8 @@
       "role": "Asisten Ringan (Model Kaggle Qwen)",
       "description": "Bot asisten ringan berbasis model Qwen dari Kaggle untuk inferensi cepat dan cost-efficient.",
       "department": "General",
-      "triggers": []
+      "triggers": [],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "Nova",
@@ -87,8 +243,18 @@
       "description": "Bot integrator ekosistem: riset, validasi kondisi aktual, sinkronisasi state antar-repo, dan verifikasi konsistensi dokumentasi.",
       "department": "General",
       "triggers": [
-        { "id": "c80996f3-eead-488a-95ad-0b37a0ec0ef4", "name": "Morning Brief zbmaus", "kind": "schedule", "weekly": "08:00 all weekdays", "enabled": true }
-      ]
+        {
+          "id": "c80996f3-eead-488a-95ad-0b37a0ec0ef4",
+          "name": "Morning Brief zbmaus",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "08:00 all weekdays (Asia/Shanghai)",
+          "failureStreak": 0,
+          "lastRun": "2026-11-26T00:00:00Z",
+          "lastChecked": "2026-11-27"
+        }
+      ],
+      "model_checked_at": "2026-11-27"
     },
     {
       "name": "Superpowers Engineer",
@@ -97,7 +263,8 @@
       "role": "Spesialis Metodologi Engineering (Superpowers)",
       "description": "Spesialis metodologi engineering tim General (ekosistem zbmaus). Terapkan alur Superpowers pada tiap tugas coding: brainstorm dulu (pahami apa dan mengapa, lihat konteks yang ada, paparkan opsi, minta setuju), isolasi worktree, rencana tugas kecil 2-5 menit di docs/superpowers/plans/ dengan path file dan tes pasti, eksekusi satu tugas per thread coordinate_bots disertai review tiap tugas, TDD RED-GREEN-REFACTOR, dan verifikasi penuh sebelum klaim selesai.",
       "department": "General",
-      "triggers": []
+      "triggers": [],
+      "model_checked_at": "2026-11-27"
     }
   ]
 }

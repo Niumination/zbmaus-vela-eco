@@ -74,3 +74,14 @@ Metodologi [obra/superpowers](https://github.com/obra/superpowers) v7.0.2 (MIT) 
 
 ### Repo zbmaus-kitab-surgawi
 Repo privat khusus bot YouTubeGrowth Kitab Surgawi (@kitabsurgawi-1357), dibuat 21 Nov 2026. Berisi engine produksi v3, QC gate, backend suara, panduan, log kualitas, riset voice, dan salinan SOUL.md. Workspace lokal tetap sumber runtime. Terdaftar di `ecosystem/repos/zbmaus-kitab-surgawi.md`. Tanpa kredensial/video.
+
+---
+
+## Inventarisasi Ekosistem 27 Nov 2026 (rutinitas Sinkronisasi & Backup Harian Ekosistem zbmaus)
+- **Bot (8):** ZB (chief, `opencode/longcat-2.5-free`), AsnAdmin & ZbmausHumanoid-Vercel (`agnes/agnes-2.5-flash`), YouTubeGrowth Kitab Surgawi / IslamicEdu Kids / Nova (`opencode/hy4-flash-free`), Kaggle-Qwen (`qwen3.8-flash-next-gyro-gyro-s`), Superpowers Engineer (`opencode/deepseek-v4.1-flash-free`). Model diverifikasi langsung dari daftar bot — catatan lama "semua agnes" tidak lagi berlaku sejak 26 Nov 2026.
+- **Routine (15; 13 aktif, 2 once dinonaktifkan):** ZB 3 (Sinkronisasi 23:00 WIB, Cek GitHub 09:00 WIB — failureStreak kembali 0 setelah sukses 26 Nov, Keep an eye 15 menit), Nova 1 (Morning Brief 08:00), ZbmausHumanoid-Vercel 1 (webhook live site, 22 panggilan), YouTubeGrowth Kitab Surgawi 10 (harian 09:00, cross-post 12:00 & 21:00 WIB, balasan komentar 10:00 & 20:00, evaluasi 15:30, penjaga kualitas 15:45, mingguan Senin 07:00 & Jumat 15:00, dokumenter Senin/Kamis 10:00, plus 2 once 19 Nov yang sudah dinonaktifkan). AsnAdmin, IslamicEdu Kids, Kaggle-Qwen, Superpowers Engineer: tanpa trigger.
+- **Room:** tidak ada room yang bisa diposting.
+- **Repo zbmaus:** zbmaus-vela (publik), zbmaus-vela-secrets (privat), zbmaus-vela-eco (publik), asn-admin (privat), zbmaus-humanoid (publik) — semuanya terdaftar. Repo luar zbmaus tidak disentuh.
+- **Apps:** GitHub (Composio, akun zbmaus/Niumination) aktif untuk baca/tulis API; YouTube via helper OAuth lokal (Composio token revoked); Facebook & Instagram via Composio aktif; Gmail, Calendar, Slack, Notion tidak terhubung; Data Engine aktif.
+- **Mesin produksi:** CATATAN-MESIN-PRODUKSI.md lengkap (21 KB) kini ikut tersimpan di `ecosystem/mesin-produksi/` — termasuk gate kualitas 26 Nov (caption 3 detik pertama) dan aturan `voice_backend="edge"`.
+- **Catatan checkout:** clone lokal eco pernah tertinggal dan bercabang dari remote; sudah direkonsiliasi ke HEAD remote sebelum penulisan ini. Push git lokal gagal autentikasi, penulisan memakai API GitHub terhubung.

@@ -26,3 +26,8 @@
 - **2026-11-18**: Routine Sinkronisasi Harian zbmaus-vela-eco mulai berjalan sesuai jadwal 23:00 WIB (run pertama mengalami failure streak due truncated tool calls).
 - **2026-11-18**: Preferensi user: perintah sangat pendek ('lanjutkan', 'jawaban singkat') dan mengharapkan ringkasan harian seluruh routine yang berjalan/gagal/retry.
 - **2026-11-18**: User menjalankan maintenance ekosistem larut malam ~23:00 WIB dan memantau async.
+
+### Pembaruan 2026-11-27 (dari MEMORY.md live)
+- Model ZB aktif: `opencode/longcat-2.5-free` (bukan gemini-3.8-flash / agnes seperti catatan lama).
+- Routine rutin: Sinkronisasi & Backup Harian 23:00 WIB dan Cek perubahan GitHub 09:00 WIB; Cek GitHub sukses 26 Nov dengan 15 repo aktif dan 136 commit dalam 24 jam, failureStreak kembali 0.
+- Pola kerja user: instruksi sangat singkat ("lanjutkan", "jawaban singkat"), ingin update bertahap, dan ringkasan akhir hari untuk semua routine yang berjalan/gagal/dicoba ulang.

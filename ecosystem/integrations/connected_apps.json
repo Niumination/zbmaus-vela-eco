@@ -13,7 +13,8 @@
       "provider": "Composio / Google API",
       "target": "@kitabsurgawi-1357",
       "scope": "Analytics inspection, video metadata, comment management",
-      "status": "connected"
+      "status": "connected",
+      "note": "Token Composio YouTube sudah di-revoke (403) sejak 19 Nov 2026; semua operasi YouTube memakai helper OAuth lokal /opt/yt-oauth/. Facebook & Instagram tetap via Composio."
     },
     {
       "name": "Facebook",
@@ -55,28 +56,32 @@
       "provider": "Composio",
       "target": "User mailbox",
       "scope": "Email triage (Keep an eye on my day)",
-      "status": "connected"
+      "status": "not_connected",
+      "note": "Tidak punya active connection (diverifikasi ulang 2026-11-27)."
     },
     {
       "name": "Google Calendar",
       "provider": "Composio",
       "target": "User calendar",
       "scope": "Meeting prep (Keep an eye on my day)",
-      "status": "connected"
+      "status": "not_connected",
+      "note": "Tidak punya active connection (diverifikasi ulang 2026-11-27)."
     },
     {
       "name": "Slack",
       "provider": "Composio",
       "target": "User workspace",
       "scope": "Team notifications",
-      "status": "connected"
+      "status": "not_connected",
+      "note": "Tidak punya active connection (diverifikasi ulang 2026-11-27)."
     },
     {
       "name": "Notion",
       "provider": "Composio",
       "target": "User workspace",
       "scope": "Notes & knowledge base",
-      "status": "connected"
+      "status": "not_connected",
+      "note": "Tidak punya active connection (diverifikasi ulang 2026-11-27)."
     },
     {
       "name": "Data Engine",
@@ -85,5 +90,7 @@
       "scope": "data_load, data_describe, data_sql, data_show, data_export",
       "status": "active"
     }
-  ]
+  ],
+  "inventory": "Sinkronisasi 2026-11-27 — status koneksi diverifikasi dengan pencarian aplikasi terhubung; app-event tidak tersedia di server ini (pakai schedule/webhook).",
+  "rooms": []
 }

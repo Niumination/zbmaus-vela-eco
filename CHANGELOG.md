@@ -4,6 +4,17 @@ Semua perubahan ekosistem OpenMausBot (zbmaus) dicatat di bawah ini.
 
 ---
 
+## 2026-11-27
+
+### 🔄 Sinkronisasi & Backup Harian (routine 23:00 WIB)
+- **Inventarisasi live:** 8 bot + model terverifikasi, 15 routine (13 aktif / 2 once nonaktif), 4 skill, 0 room, 13 catatan tim, 5 repo zbmaus.
+- **Diperbarui:** `ecosystem/bots.json` v1.3.0 (status trigger & model aktual), `ecosystem/routines/triggers.json` v2.2.0 (lastRun & failureStreak — Cek GitHub kembali ke 0 setelah sukses 26 Nov), `ecosystem/integrations/connected_apps.json` (catatan OAuth YouTube), `ecosystem/skills/catalog.md` (tambah `omb-bot-creation`, koreksi `omb-routine-scheduling`), `ecosystem/memory/team_memory.{md,json}` (inventarisasi 27 Nov).
+- **Ditambahkan:** `ecosystem/mesin-produksi/CATATAN-MESIN-PRODUKSI.md` — salinan lengkap dokumentasi mesin (ffmpeg 2-pass, QC gate, edge-tts, aturan dalil, jalur upload, gate terbaru 26 Nov) agar prosedur tidak lagi hanya berupa ringkasan.
+- **Verifikasi:** checkout lokal yang bercabang direkonsiliasi ke HEAD remote sebelum penulisan; credential scan tidak menemukan token/kata sandi/kunci privat di file publik; kredensial & `omb-state-*` tetap hanya di repo privat.
+- **24 Nov — koreksi:** git push lokal gagal autentikasi (helper token tidak valid); penulisan remote dilakukan lewat koneksi GitHub terhubung.
+
+---
+
 ## 2026-11-26
 
 ### 🤖 Onboarding Superpowers Engineer

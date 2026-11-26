@@ -140,5 +140,15 @@
     ],
     "date_created": "2026-11-21",
     "content": "Repo privat khusus bot YouTubeGrowth Kitab Surgawi (@kitabsurgawi-1357), dibuat 21 Nov 2026. Berisi engine produksi v3, QC gate, backend suara, panduan, log kualitas, riset voice, salinan SOUL.md. Workspace lokal tetap sumber runtime. Terdaftar resmi di zbmaus-vela-eco: ecosystem/repos/zbmaus-kitab-surgawi.md, README.md, dan ecosystem/bots.json. Tanpa kredensial/video."
+  },
+  {
+    "title": "Inventarisasi Ekosistem 27 Nov 2026",
+    "aliases": [
+      "inventarisasi harian zbmaus",
+      "sinkronisasi 27 nov",
+      "status ekosistem 27 nov"
+    ],
+    "date": "2026-11-27",
+    "content": "8 bot (model terverifikasi langsung), 15 routine (13 aktif), 0 room, 5 repo zbmaus, GitHub via Composio, YouTube via helper OAuth lokal, CATATAN-MESIN-PRODUKSI lengkap tersimpan di eco."
   }
 ]
