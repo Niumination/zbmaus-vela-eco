@@ -245,7 +245,7 @@ Disk: **79% terpakai (11 GB bebas dari 50 GB)** — dibersihkan 25 Nov (Tier 1).
 8. noVNC `/websockify` via HTTP/2 bisa 404 — browser nyata selalu HTTP/1.1 untuk WS, aman.
 9. **Plugin Plaza di VPS DSH baru** — perlu `pnpm install` di `~/.dsh/profiles/web` bila belum muncul (§8e).
 10. **Kaggle Strata session DOWN (26 Nov)**: error code 1033. Jalankan **Run All** di Kaggle + rotasi key baru ke 9Router untuk hidupkan ulang.
-11. **Kaggle GPU Qwen3.8-27B v6 — DEBUG IN PROGRESS (26 Nov)**: Cell 3 bug glob→str fixed (v3), stderr capture fixed (v4), CUDA lib search extended to `/opt/conda` (v5→v6). Belum di-Run All karena butuh investigasi path library lebih lanjut.
+11. ~~**Kaggle GPU Qwen3.8-27B v6 — DEBUG IN PROGRESS (26 Nov)**~~ — **SELESAI & LIVE (26 Nov)**: notebook `ryuarch/qwen38-uncensored-gpu-t4` v14 sukses end-to-end (v13 fix kritis: tanpa copy GGUF — batas `/kaggle/working` ~19,5 GiB; load langsung dari `/kaggle/input`; v14: tunnel tidak menuntut health 200). Health 200 `{"status":"ok"}`, chat completion terverifikasi, dipakai dari OpenCode Mac. Client: `https://arbitrage-model.abstract.biz.id/v1`, model `qwen3.8-27b-uncensored`, ctx 65536, API key bebas. Sesi Kaggle ~12 jam/Run All.
 12. **Superpowers plugin** — skill_view berfungsi tapi perlu gateway restart agar bootstrap injection aktif penuh.
 
 ## 10. Perintah Operasi Cepat
