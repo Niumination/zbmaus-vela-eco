@@ -117,5 +117,28 @@
     ],
     "date_created": "2026-11-15",
     "content": "Seri Dokumenter Islami di channel Kitab Surgawi diubah dari mingguan menjadi 2 kali seminggu (Senin & Kamis pukul 10:00 WIB), lengkap dengan klip Shorts untuk mendongkrak distribusi penonton."
+  },
+  {
+    "id": "superpowers_workflow_adoption",
+    "title": "Adopsi Metodologi Superpowers di Ekosistem zbmaus",
+    "aliases": [
+      "superpowers",
+      "superpowers-workflow",
+      "alur engineering superpowers",
+      "TDD tim zbmaus"
+    ],
+    "date_created": "2026-11-25",
+    "content": "26 Nov 2026: metodologi obra/superpowers v7.0.2 (MIT, https://github.com/obra/superpowers) diadopsi resmi sebagai skill bersama bernama superpowers-workflow dan bot spesialis 'Superpowers Engineer' (id 134f49fb-c860-41e9-a45e-13b00c8dac67) di tim General. Alur wajib: brainstorm -> worktree -> rencana 2-5 menit dengan tes pasti -> TDD RED-GREEN-REFACTOR -> subagent review per tugas -> verifikasi sebelum klaim selesai. Sumber eksternal tidak dicampur ke repo zbmaus; hanya metodologinya yang diadopsi."
+  },
+  {
+    "id": "zbmaus_kitab_surgawi_repo",
+    "title": "zbmaus-kitab-surgawi",
+    "aliases": [
+      "repo kitab surgawi",
+      "zbmaus kitab surgawi",
+      "mesin produksi kitab surgawi"
+    ],
+    "date_created": "2026-11-21",
+    "content": "Repo privat khusus bot YouTubeGrowth Kitab Surgawi (@kitabsurgawi-1357), dibuat 21 Nov 2026. Berisi engine produksi v3, QC gate, backend suara, panduan, log kualitas, riset voice, salinan SOUL.md. Workspace lokal tetap sumber runtime. Terdaftar resmi di zbmaus-vela-eco: ecosystem/repos/zbmaus-kitab-surgawi.md, README.md, dan ecosystem/bots.json. Tanpa kredensial/video."
   }
 ]
