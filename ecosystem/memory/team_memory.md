@@ -64,3 +64,13 @@ Spesialis (YouTubeGrowth, AsnAdmin, Nova, ZbmausHumanoid-Vercel, IslamicEdu Kids
 - **GitHub (Niumination, id 123625275):** 178 repos; ekosistem zbmaus: zbmaus-vela-eco (publik, main), zbmaus-vela (publik), zbmaus-vela-secrets (privat), asn-admin (privat), zbmaus-humanoid (publik). Tidak ada commit baru dalam 24 jam.
 - **Apps:** GitHub, YouTube, Facebook, Instagram aktif (Composio); Gmail/Google Calendar/Slack/Notion tidak punya active connection (diverifikasi 24 Nov 2026).
 - **Rooms:** tidak ada room.
+
+---
+
+## Catatan Tambahan (sinkron 26 Nov 2026)
+
+### Adopsi Metodologi Superpowers
+Metodologi [obra/superpowers](https://github.com/obra/superpowers) v7.0.2 (MIT) diadopsi resmi sebagai skill bersama `superpowers-workflow` dan bot spesialis **Superpowers Engineer** (id `134f49fb-c860-41e9-a45e-13b00c8dac67`) di tim General. Alur wajib: brainstorm → worktree → rencana 2–5 menit dengan tes pasti → TDD RED-GREEN-REFACTOR → subagent review per tugas → verifikasi sebelum klaim selesai. Hanya metodologinya yang diadopsi; sumber eksternal tidak dicampur ke repo zbmaus.
+
+### Repo zbmaus-kitab-surgawi
+Repo privat khusus bot YouTubeGrowth Kitab Surgawi (@kitabsurgawi-1357), dibuat 21 Nov 2026. Berisi engine produksi v3, QC gate, backend suara, panduan, log kualitas, riset voice, dan salinan SOUL.md. Workspace lokal tetap sumber runtime. Terdaftar di `ecosystem/repos/zbmaus-kitab-surgawi.md`. Tanpa kredensial/video.
