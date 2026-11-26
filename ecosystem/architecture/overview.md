@@ -11,6 +11,7 @@ graph TD
         ZB <--> IslamicEdu[IslamicEdu Kids<br/>Edukasi Anak 2-4 Thn]
         ZB <--> KaggleQwen[Kaggle-Qwen<br/>Inferensi Ringan T4 GPU]
         ZB <--> Nova[Nova<br/>Tupoksi Baru & Integrator]
+        ZB <--> SPE[Superpowers Engineer<br/>Metodologi Engineering]
     end
 
     subgraph Infrastruktur & Penyimpanan
@@ -29,6 +30,6 @@ graph TD
 
 ## Prinsip Koordinasi
 1. **Single Point of Contact**: Pengguna berinteraksi langsung melalui ZB.
-2. **Spesialis Mandiri**: Setiap agen memegang ranah domain tertentu (ASN, Media/Dakwah, Web frontend, Edukasi, Riset/Tupoksi).
+2. **Spesialis Mandiri**: Setiap agen memegang ranah domain tertentu (ASN, Media/Dakwah, Web frontend, Edukasi, Riset/Tupoksi, Metodologi).
 3. **Koordinasi Peer**: ZB mendelegasikan tugas menggunakan `coordinate_bots` tanpa mengambil alih otoritas internal spesialis.
 4. **Penanganan Insiden Terpusat**: Kegagalan agen (seperti limit kuota token atau perubahan status model gratis) dilaporkan ke ZB untuk ditangani atau dikomunikasikan secara transparan ke pengguna.
