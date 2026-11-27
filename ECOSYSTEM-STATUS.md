@@ -1,33 +1,27 @@
 # Ekosistem zbmaus — Status Saat Ini
 
-> Generated 28 November 2026 — Sinkronisasi & Backup Harian Ekosistem zbmaus.
-> Sumber kebenaran: data live tool agents. Repo ini adalah artefak turunan.
-
-## Ringkasan
+> Generated 28 November 2026. Sumber kebenaran: data live tool agents. Repo ini artefak turunan.
 
 | Item | Jumlah | Keterangan |
 |------|--------|------------|
-| Bot | 8 | Semua aktif |
-| Routine/trigger | 17 | 14 enabled, 3 disabled |
-| Skill | 4 | Semua enabled |
-| App terhubung | 6 | GitHub, YouTube, Facebook, Instagram, Vercel, Kaggle |
+| Bot | 8 | Semua aktif, department General |
+| Routine/trigger | 17 | 15 enabled, 2 disabled |
+| Skill | 4 | omb-bot-creation, omb-ecosystem-sync, omb-routine-scheduling, superpowers-workflow |
+| App terhubung | 7 | GitHub, YouTube, Facebook, Instagram, Vercel, Kaggle, Boldsign |
 | Room | 0 | Belum ada |
-| Catatan tim | 13 | Semua accepted |
-| Repo zbmaus | 5 | Termasuk eco & secrets |
+| Catatan tim | 13 | accepted |
+| Repo zbmaus | 6 | eco, secrets, vela, asn-admin, zbmaus-humanoid, zbmaus-kitab-surgawi |
 
-## Repositori zbmaus
+## Koreksi penting
 
-1. `Niumination/zbmaus-vela-eco` — artefak publik (repo ini).
-2. `Niumination/zbmaus-vela-secrets` — kredensial & state privat.
-3. `Niumination/zbmaus-agent-studio`
-4. `Niumination/zbmaus-content-lab`
-5. `Niumination/zbmaus-infra`
-
-Repo di luar zbmaus (LightVela, mirai, hermes, apex, ecosystem-config) tidak disentuh.
+- Versi 2.3.0 triggers.json salah menamai `b2e9a760` (sebenarnya bersih-bersih storage 03:00) dan `e71db9c1` (produksi Kamis 10:00). Sudah dikoreksi di v2.4.0.
+- `bots.json` v1.4.0 memuat ID buatan; v1.5.0 memakai UUID asli dari data live.
+- `team_memory` v1.2.0 memuat kunci buatan; v1.3.0 memakai 13 kunci asli dari `session_search scope=team`.
 
 ## Tool yang bermasalah
 
-- `session_search`: limit harus <= 25 (berhasil setelah koreksi).
-- `COMPOSIO_SEARCH_TOOLS`: maksimal 7 query per panggilan.
+- `session_search`: butuh query atau `since`; limit maksimal 25.
+- `COMPOSIO_SEARCH_TOOLS`: maksimal 7 query; argumen `queries` berupa objek `{use_case}`.
 - Endpoint app-event/template tidak tersedia di sesi ini.
-- Routine `5af330ca` tidak bisa dihapus via tool yang tersedia; dinonaktifkan dengan mengubah status dan instruksi.
+- Hasil `list_triggers` YouTube besar; dibaca bertahap via `tool_result_read`.
+- Dua percobaan commit awal gagal karena escaping JS; diatasi dengan payload gzip+base64.

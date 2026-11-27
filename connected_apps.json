@@ -1,0 +1,14 @@
+{
+  "_meta":{"schema":"zbmaus.app-connections","version":"1.2.0","generated":"2026-11-28T00:00:00+07:00","description":"App connections dari Composio dan daftar koneksi bot. Tanpa token/secret."},
+  "apps":[
+    {"name":"GitHub","status":"connected","uses":["zbmaus-vela-eco","zbmaus-vela-secrets","repo zbmaus"]},
+    {"name":"YouTube","status":"connected","note":"Token Composio revoked (403); operasi via helper OAuth lokal /opt/yt-oauth/."},
+    {"name":"Facebook","status":"connected","uses":["Kitab Surgawi cross-post"]},
+    {"name":"Instagram","status":"connected","uses":["Kitab Surgawi Reels"]},
+    {"name":"Vercel","status":"connected","uses":["zbmaus-humanoid.vercel.app"]},
+    {"name":"Kaggle","status":"connected","uses":["Kaggle-Qwen"]},
+    {"name":"Boldsign","status":"connected"}
+  ],
+  "not_active":["Slack","Notion","Gmail","Google Calendar"],
+  "unavailable":["app-event/template endpoints"]
+}

@@ -1,26 +1,22 @@
 # Team Memory — Ekosistem zbmaus
 
-> Snapshot 28 November 2026 — 13 catatan `accepted` dari `session_search scope=team`.
-> Versi mesin: `.zbmaus/raw/team_memory.json`.
-
-## Ringkasan
+> Snapshot 28 November 2026 — 13 catatan `accepted` dari `session_search scope=team`. Kunci di bawah adalah kunci asli.
+> Catatan lama dapat usang terhadap data live; lihat kolom koreksi.
 
 | # | Key | Topik | Catatan |
 |---|-----|-------|---------|
-| 1 | standar-model-tim-general-2026-11 | Standar model tim | Model default tim: `opencode/hy4-flash-free`, kecuali kebutuhan khusus. |
-| 2 | struktur-esosistem-2026-11 | Struktur ekosistem | Pemisahan absolut `zbmaus-vela-eco` (publik) dan `zbmaus-vela-secrets` (kredensial). |
-| 3 | jadwal-dokumenter-kitab-surgawi | Jadwal produksi | Sejak 27 Nov: dokumenter Kamis 10:00 (`b2e9a760`); Senin hanya riset (`e71db9c1`). |
-| 4 | fb_page_kitab_surgawi | Aset Facebook | Halaman Facebook Kitab Surgawi jadi kanal distribusi utama. |
-| 5 | arah-produksi-kitab-surgawi-2026-11 | Arah produksi | Riset Senin, produksi Kamis; motionmaxxing hanya uji A/B. |
-| 6 | voice-backend-edge | Konfigurasi | `voice_backend="edge"` — jangan diubah tanpa persetujuan. |
-| 7 | youtube-oauth-helper | YouTube | Akses via helper OAuth lokal; token tidak pernah masuk repo publik. |
-| 8 | routine-sync-harian | Operasional | Urutan: kumpulkan -> audit -> tulis eco -> backup secrets -> verifikasi. |
-| 9 | repo-zbmaus-terdaftar | Repositori | 5 repo zbmaus aktif. |
-| 10 | skill-ekosistem | Skill | 4 skill aktif. |
-| 11 | tidak-ada-room | Komunikasi | Belum ada room aktif. |
-| 12 | superpowers-engineer-aktif | Bot | Model `opencode/seaglass-alpha-free`, skill `superpowers-workflow`. |
-| 13 | filter-kredensial-publik | Keamanan | Audit kredensial wajib sebelum push ke eco. |
+| 1 | adopsi-superpowers-zbmaus-2026-11-26 | Skill | Superpowers v7.0.2 jadi skill bersama; bot Superpowers Engineer di tim General. |
+| 2 | zbmaus-kitab-surgawi-repo | Repo | Repo privat engine produksi v3; terdaftar di eco sejak 21 Nov. |
+| 3 | standar-model-tim-general-2026-11 | Model | USAHkan: model lama agnes/gemini; live = hy4/longcat/seaglass. |
+| 4 | isolasi-ekosistem-zbmaus | Keamanan | Dilarang campur repo ekosistem lain. |
+| 5 | pemetaan-repo-ekosistem-zbmaus | Repo | vela, secrets, eco, asn-admin, zbmaus-humanoid. |
+| 6 | arah-produksi-kitab-surgawi-2026-11 | Produksi | Senin riset 07:00, evaluasi harian 15:30. |
+| 7 | jadwal-dokumenter-kitab-surgawi | Jadwal | USAHkan: live = Kamis 10:00 (e71db9c1); 5af330ca disabled. |
+| 8 | place:facebook page kitab surgawi | Distribusi | Page ID 1467846356417352, akun AM. |
+| 9 | kitabsurgawi-tech-quarantine | Konten | Karantina diurungkan; video teknologi tetap publik. |
+| 10 | term:kitab surgawi channel mix | Konten | Analitik channel via helper. |
+| 11 | repo-asn-admin | Repo | Mesin produksi administrasi ASN; AsnAdmin. |
+| 12 | decision:nova bot for new duties integration | Bot | Nova untuk tupoksi baru & integrasi. |
+| 13 | term:zbmaus | Ekosistem | OpenMausBot di maus.abstract.biz.id, GitHub Niumination. |
 
-## Catatan koreksi
-
-Beberapa key lama (`standar-model-tim-general-2026-11`, `jadwal-dokumenter-kitab-surgawi`, `fb_page_kitab_surgawi`, `arah-produksi-kitab-surgawi-2026-11`) perlu diperbarui di team memory live agar sinkron dengan snapshot ini.
+Versi mesin: `.zbmaus/raw/team_memory.json`.

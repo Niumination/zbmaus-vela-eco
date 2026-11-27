@@ -1,26 +1,24 @@
 {
   "_meta": {
-    "schema": "zbmaus.team-memory",
-    "version": "1.2.0",
-    "generated": "2026-11-28T00:00:00+07:00",
-    "generated_by": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
-    "description": "Snapshot 13 catatan tim yang accepted (session_search scope=team).",
-    "notes": "Berisi pengetahuan operasional, bukan kredensial."
+    "schema":"zbmaus.team-memory",
+    "version":"1.3.0",
+    "generated":"2026-11-28T00:00:00+07:00",
+    "description":"Snapshot 13 catatan accepted dari session_search scope=team (kunci asli, bukan turinan). Catatan lama mungkin usang terhadap data live 28 Nov 2026; koreksi diajukan terpisah."
   },
-  "total": 13,
-  "notes": [
-    {"key": "standar-model-tim-general-2026-11", "topic": "Standar model tim", "summary": "Kesepakatan model default untuk bot umum: opencode/hy4-flash-free kecuali ada kebutuhan khusus.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "struktur-esosistem-2026-11", "topic": "Struktur ekosistem", "summary": "zbmaus-vela-eco untuk artefak publik; zbmaus-vela-secrets untuk kredensial. Pemisahan ini mutlak.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "jadwal-dokumenter-kitab-surgawi", "topic": "Jadwal produksi", "summary": "Sejak 27 Nov 2026: dokumenter 1x/minggu Kamis 10:00 WIB (b2e9a760); Senin hanya riset (e71db9c1).", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "fb_page_kitab_surgawi", "topic": "Aset Facebook", "summary": "Halaman Facebook Kitab Surgawi menjadi kanal distribusi utama konten dokumenter.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "arah-produksi-kitab-surgawi-2026-11", "topic": "Arah produksi", "summary": "Fokus riset konten senin, produksi dokumenter kamis; motionmaxxing hanya untuk uji A/B.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "voice-backend-edge", "topic": "Konfigurasi produksi", "summary": "Kitab Surgawi menggunakan voice_backend=edge; jangan diubah tanpa persetujuan.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "youtube-oauth-helper", "topic": "YouTube", "summary": "Akses YouTube wajib via helper OAuth lokal; jangan menyimpan token di repo publik.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "routine-sync-harian", "topic": "Operasional", "summary": "Urutan sinkronisasi harian: kumpulkan, audit, tulis eco, backup secrets, verifikasi.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "repo-zbmaus-terdaftar", "topic": "Repositori", "summary": "Lima repo zbmaus aktif: zbmaus-vela-eco, zbmaus-vela-secrets, zbmaus-agent-studio, zbmaus-content-lab, zbmaus-infra.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "skill-ekosistem", "topic": "Skill", "summary": "Empat skill aktif: omb-bot-creation, omb-ecosystem-sync, omb-routine-scheduling, superpowers-workflow.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "tidak-ada-room", "topic": "Komunikasi", "summary": "Belum ada room aktif; koordinasi melalui thread dan team memory.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "superpowers-engineer-aktif", "topic": "Bot", "summary": "Superpowers Engineer terdaftar dengan model opencode/seaglass-alpha-free dan skill superpowers-workflow.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
-    {"key": "filter-kredensial-publik", "topic": "Keamanan", "summary": "Repo eco wajib bebas token/password/cookie/private key/env sensitif. Audit dilakukan sebelum push.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"}
+  "total":13,
+  "notes":[
+    {"key":"adopsi-superpowers-zbmaus-2026-11-26","topic":"Skill & metodologi","summary":"26 Nov 2026: metodologi obra/superpowers v7.0.2 diadopsi sebagai skill superpowers-workflow; bot Superpowers Engineer (134f49fb-...) di tim General. Alur: brainstorm -> worktree -> rencana -> TDD -> review -> verifikasi.","status":"accepted"},
+    {"key":"zbmaus-kitab-surgawi-repo","topic":"Repositori","summary":"Repo privat khusus YouTubeGrowth Kitab Surgawi: engine produksi v3, QC gate, backend suara, panduan, log kualitas. Terdaftar di eco sejak 21 Nov 2026. Tanpa kredensial/video."},
+    {"key":"standar-model-tim-general-2026-11","topic":"Model tim","summary":"Catatan lama: seluruh spesialis dialihkan ke agnes/agnes-2.5-flash, ZB gemini-3.8-flash. USAHkan: data live 28 Nov menunjukkan sebagian besar bot di opencode/hy4-flash-free, ZB opencode/longcat-2.5-free, Superpowers Engineer opencode/seaglass-alpha-free."},
+    {"key":"isolasi-ekosistem-zbmaus","topic":"Keamanan ekosistem","summary":"Dilarang mencampur repo/proyek ekosistem lain (LightVela, mirai, hermes, apex, dll). Operasi hanya pada repo resmi zbmaus."},
+    {"key":"pemetaan-repo-ekosistem-zbmaus","topic":"Repositori","summary":"zbmaus-vela (publik blueprint VPS), zbmaus-vela-secrets (privat kredensial), zbmaus-vela-eco (publik snapshot tanpa rahasia), asn-admin, zbmaus-humanoid. Repo LightVela bukan bagian zbmaus."},
+    {"key":"arah-produksi-kitab-surgawi-2026-11","topic":"Arah produksi","summary":"Senin 07:00 riset & kurasi aset; variasi visual Reels/Shorts; dokumenter diperkaya aset visual; evaluasi mesin harian 15:30 WIB."},
+    {"key":"jadwal-dokumenter-kitab-surgawi","topic":"Jadwal produksi","summary":"Catatan lama: dokumenter 2x/minggu Senin & Kamis 10:00. USAHkan: data live menunjukkan e71db9c1 aktif Kamis 10:00; 5af330ca (Senin+Kamis) disabled; Senin 07:00 hanya riset (61f30e61)."},
+    {"key":"place:facebook page kitab surgawi","topic":"Distribusi","summary":"Halaman Facebook resmi Kitab Surgawi Page ID 1467846356417352, akun Composio AM; cross-post native vertikal, link YouTube di komentar pertama."},
+    {"key":"kitabsurgawi-tech-quarantine","topic":"Konten","summary":"Keputusan karantina video teknologi diurungkan; video teknologi tetap tayang publik (revisi 12 Nov 2026)."},
+    {"key":"term:kitab surgawi channel mix","topic":"Konten","summary":"Sumber analitik channel via YOUTUBE_QUERY_ANALYTICS dan judul video oEmbed (rutinitas 10 Nov 2026)."},
+    {"key":"repo-asn-admin","topic":"Repositori","summary":"Repo privat Niumination/asn-admin, mesin produksi administrasi ASN Diskominfo Aceh Tengah; ditangani AsnAdmin."},
+    {"key":"decision:nova bot for new duties integration","topic":"Bot","summary":"Nova dibuat untuk tupoksi baru & integrasi ekosistem, berdasarkan studi tujuh repo pola integrasi."},
+    {"key":"term:zbmaus","topic":"Ekosistem","summary":"Ekosistem OpenMausBot milik pengguna, berjalan di VPS maus.abstract.biz.id; akun GitHub Niumination; mencakup bot, routine, room, memory, skill, app, dan data tools."}
   ]
 }
