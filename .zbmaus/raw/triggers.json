@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "schema": "zbmaus.trigger-registry",
+    "version": "2.3.0",
+    "generated": "2026-11-28T00:00:00+07:00",
+    "generated_by": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
+    "description": "Snapshot trigger/routine semua bot. Sumber kebenaran: agents_list_triggers, lima belas entri ditemukan (14 enabled, 3 disabled).",
+    "notes": "File ini berisi HANYA metadata dan instruksi routine. Tidak ada token, password, cookie, private key, atau variabel env sensitif. Nilai rahasia tetap di zbmaus-vela-secrets."
+  },
+  "stats": {
+    "total": 17,
+    "enabled": 14,
+    "disabled": 3,
+    "by_bot": {
+      "ZB": 3,
+      "AsnAdmin": 0,
+      "ZbmausHumanoid-Vercel": 1,
+      "YouTubeGrowth": 12,
+      "IslamicEdu Kids": 0,
+      "Kaggle-Qwen": 0,
+      "Nova": 1,
+      "Superpowers Engineer": 0
+    }
+  },
+  "triggers": [
+    {
+      "id": "80e15a29",
+      "name": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
+      "bot": "ZB",
+      "type": "cron",
+      "schedule": "0 0 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/15714d6a.md",
+      "note": "Routine induk yang sedang berjalan; inventarisasi -> audit -> tulis eco -> backup secrets -> verifikasi."
+    },
+    {
+      "id": "3bd9e9df",
+      "name": "Pemeriksaan Kesehatan Rutin",
+      "bot": "ZB",
+      "type": "cron",
+      "schedule": "0 6,18 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/61f30e61.md"
+    },
+    {
+      "id": "f6e4a8ca",
+      "name": "Sinkronisasi Memori Tim Mingguan",
+      "bot": "ZB",
+      "type": "cron",
+      "schedule": "0 7 * * 1",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/aa2deb00.md"
+    },
+    {
+      "id": "3cff2cd1",
+      "name": "Sinkronisasi Vercel & Deploy Check",
+      "bot": "ZbmausHumanoid-Vercel",
+      "type": "webhook",
+      "schedule": "on-demand",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/5af330ca.md",
+      "note": "Diperbarui 27 Nov 2026: voice_backend=edge, pakai helper OAuth lokal, motionmaxxing hanya uji A/B."
+    },
+    {
+      "id": "d86e2fd3",
+      "name": "Pantau YouTube Analytics Pagi",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 7 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-d86e2fd3.md"
+    },
+    {
+      "id": "b2e9a760",
+      "name": "Dokumenter Kitab Surgawi - Mingguan",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 10 * * 4",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/b2e9a760.md",
+      "note": "BARU 27 Nov 2026. Menggantikan jadwal lama 5af330ca untuk produksi dokumenter."
+    },
+    {
+      "id": "e71db9c1",
+      "name": "Riset Konten Kitab Surgawi - Senin",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 10 * * 1",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/e71db9c1.md",
+      "note": "BARU 27 Nov 2026. Senin hanya riset, bukan produksi. voice_backend=edge."
+    },
+    {
+      "id": "c1a9b3d2",
+      "name": "Produksi Konten Islami Anak",
+      "bot": "IslamicEdu Kids",
+      "type": "cron",
+      "schedule": "0 8 * * 2,5",
+      "timezone": "Asia/Jakarta",
+      "status": "disabled",
+      "instruction": ".zbmaus/instructions/islamic-c1a9b3d2.md",
+      "note": "Ditunda sementara menunggu persetujuan konten."
+    },
+    {
+      "id": "5af330ca",
+      "name": "Produksi Dokumenter Kitab Surgawi (Lama)",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 10 * * 1",
+      "timezone": "Asia/Jakarta",
+      "status": "disabled",
+      "instruction": ".zbmaus/instructions/pensiun-5af330ca.md",
+      "note": "DINONAKTIFKAN 27 Nov 2026. Digantikan e71db9c1 (riset Senin) + b2e9a760 (dokumenter Kamis)."
+    },
+    {
+      "id": "a4f2c7e1",
+      "name": "Laporan Mingguan Kanal",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 9 * * 1",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-a4f2c7e1.md"
+    },
+    {
+      "id": "b7d3e9f2",
+      "name": "Riset Trending YouTube",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 6 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-b7d3e9f2.md"
+    },
+    {
+      "id": "c8e4f0a3",
+      "name": "Cek Komentar & Balasan",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 12,20 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-c8e4f0a3.md"
+    },
+    {
+      "id": "d9f5a1b4",
+      "name": "Sinkronisasi Metadata Video",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 13 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-d9f5a1b4.md"
+    },
+    {
+      "id": "e0a6b2c5",
+      "name": "Export Laporan Performa",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 18 * * 5",
+      "timezone": "Asia/Jakarta",
+      "status": "disabled",
+      "instruction": ".zbmaus/instructions/yt-e0a6b2c5.md"
+    },
+    {
+      "id": "f1b7c3d6",
+      "name": "Backup Playlist & Thumbnail",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 23 * * 0",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-f1b7c3d6.md"
+    },
+    {
+      "id": "a2c8d4e7",
+      "name": "Analisis Retensi Penonton",
+      "bot": "YouTubeGrowth",
+      "type": "cron",
+      "schedule": "0 14 * * 3",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/yt-a2c8d4e7.md"
+    },
+    {
+      "id": "9e3d7a21",
+      "name": "Sinkronisasi Harian Nova",
+      "bot": "Nova",
+      "type": "cron",
+      "schedule": "30 0 * * *",
+      "timezone": "Asia/Jakarta",
+      "status": "enabled",
+      "instruction": ".zbmaus/instructions/nova-9e3d7a21.md"
+    }
+  ],
+  "corrections": [
+    "Status 5af330ca diubah enabled -> disabled (27 Nov 2026).",
+    "Trigger baru b2e9a760 (dokumenter Kamis 10:00) dan e71db9c1 (riset Senin 10:00) ditambahkan.",
+    "Stats dikoreksi dari 15 total / 13 enabled / 2 disabled menjadi 17 total / 14 enabled / 3 disabled."
+  ]
+}

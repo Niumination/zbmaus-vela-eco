@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "schema": "zbmaus.team-memory",
+    "version": "1.2.0",
+    "generated": "2026-11-28T00:00:00+07:00",
+    "generated_by": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
+    "description": "Snapshot 13 catatan tim yang accepted (session_search scope=team).",
+    "notes": "Berisi pengetahuan operasional, bukan kredensial."
+  },
+  "total": 13,
+  "notes": [
+    {"key": "standar-model-tim-general-2026-11", "topic": "Standar model tim", "summary": "Kesepakatan model default untuk bot umum: opencode/hy4-flash-free kecuali ada kebutuhan khusus.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "struktur-esosistem-2026-11", "topic": "Struktur ekosistem", "summary": "zbmaus-vela-eco untuk artefak publik; zbmaus-vela-secrets untuk kredensial. Pemisahan ini mutlak.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "jadwal-dokumenter-kitab-surgawi", "topic": "Jadwal produksi", "summary": "Sejak 27 Nov 2026: dokumenter 1x/minggu Kamis 10:00 WIB (b2e9a760); Senin hanya riset (e71db9c1).", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "fb_page_kitab_surgawi", "topic": "Aset Facebook", "summary": "Halaman Facebook Kitab Surgawi menjadi kanal distribusi utama konten dokumenter.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "arah-produksi-kitab-surgawi-2026-11", "topic": "Arah produksi", "summary": "Fokus riset konten senin, produksi dokumenter kamis; motionmaxxing hanya untuk uji A/B.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "voice-backend-edge", "topic": "Konfigurasi produksi", "summary": "Kitab Surgawi menggunakan voice_backend=edge; jangan diubah tanpa persetujuan.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "youtube-oauth-helper", "topic": "YouTube", "summary": "Akses YouTube wajib via helper OAuth lokal; jangan menyimpan token di repo publik.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "routine-sync-harian", "topic": "Operasional", "summary": "Urutan sinkronisasi harian: kumpulkan, audit, tulis eco, backup secrets, verifikasi.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "repo-zbmaus-terdaftar", "topic": "Repositori", "summary": "Lima repo zbmaus aktif: zbmaus-vela-eco, zbmaus-vela-secrets, zbmaus-agent-studio, zbmaus-content-lab, zbmaus-infra.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "skill-ekosistem", "topic": "Skill", "summary": "Empat skill aktif: omb-bot-creation, omb-ecosystem-sync, omb-routine-scheduling, superpowers-workflow.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "tidak-ada-room", "topic": "Komunikasi", "summary": "Belum ada room aktif; koordinasi melalui thread dan team memory.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "superpowers-engineer-aktif", "topic": "Bot", "summary": "Superpowers Engineer terdaftar dengan model opencode/seaglass-alpha-free dan skill superpowers-workflow.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"},
+    {"key": "filter-kredensial-publik", "topic": "Keamanan", "summary": "Repo eco wajib bebas token/password/cookie/private key/env sensitif. Audit dilakukan sebelum push.", "status": "accepted", "synced_at": "2026-11-28T00:00:00+07:00"}
+  ]
+}

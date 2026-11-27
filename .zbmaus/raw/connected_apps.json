@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "schema": "zbmaus.app-connections",
+    "version": "1.1.0",
+    "generated": "2026-11-28T00:00:00+07:00",
+    "generated_by": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
+    "description": "Daftar aplikasi yang terhubung ke ekosistem. Sumber: agents_list_app_connections lintas bot.",
+    "notes": "Hanya metadata koneksi. TIDAK ada access token, refresh token, API key, cookie, atau secret lain di file ini."
+  },
+  "apps": [
+    {"name": "GitHub", "status": "connected", "owner": "Niumination", "uses": ["zbmaus-vela-eco", "zbmaus-vela-secrets", "repo zbmaus lainnya"]},
+    {"name": "YouTube", "status": "connected", "owner": "Niumination", "uses": ["Kitab Surgawi", "YouTubeGrowth", "IslamicEdu Kids", "Nova"]},
+    {"name": "Facebook", "status": "connected", "owner": "Niumination", "uses": ["Kitab Surgawi", "ZB", "Nova"]},
+    {"name": "Instagram", "status": "connected", "owner": "Niumination", "uses": ["Kitab Surgawi", "ZB", "Nova"]},
+    {"name": "Vercel", "status": "connected", "owner": "Niumination", "uses": ["ZbmausHumanoid-Vercel", "deploy frontend"]},
+    {"name": "Kaggle", "status": "connected", "owner": "Niumination", "uses": ["Kaggle-Qwen", "eksperimen model"]}
+  ],
+  "not_active": ["Slack", "Notion", "Gmail", "Google Calendar"],
+  "unavailable_tools": ["app-event/template endpoints tidak tersedia di sesi ini"]
+}
