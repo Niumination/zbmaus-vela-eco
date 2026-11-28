@@ -5,7 +5,7 @@
 | Item | Jumlah | Keterangan |
 |------|--------|------------|
 | Bot | 8 | Semua aktif, department General |
-| Routine/trigger | 17 | 15 enabled, 2 disabled |
+| Routine/trigger | 17 | 14 enabled, 3 disabled |
 | Skill | 4 | omb-bot-creation, omb-ecosystem-sync, omb-routine-scheduling, superpowers-workflow |
 | App terhubung | 7 | GitHub, YouTube, Facebook, Instagram, Vercel, Kaggle, Boldsign |
 | Room | 0 | Belum ada |
