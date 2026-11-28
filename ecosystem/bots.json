@@ -13,8 +13,8 @@
   "stats": {
     "bots": 8,
     "triggers": 17,
-    "enabled": 15,
-    "paused": 2
+    "enabled": 14,
+    "paused": 3
   },
   "teammates": [
     {
@@ -100,6 +100,28 @@
       "description": "YouTube Growth & Monetization specialist for 'Kitab Surgawi' (youtube.com/@kitabsurgawi-1357), Indonesian Islamic content. Mission: grow subscribers/views and generate YouTube income.",
       "department": "General",
       "triggers": [
+        {
+          "id": "b2e9a760-67bf-4fe2-9c40-7b7da725a0b4",
+          "name": "Bersih-bersih Storage Produksi (harian 03:00 WIB)",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 3 * * * Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": "2026-11-27T20:00:06.053Z",
+          "lastChecked": "2026-11-29",
+          "timeoutMinutes": 20
+        },
+        {
+          "id": "e71db9c1-84d6-482a-b40b-e7d193322a78",
+          "name": "Produksi & Publikasi Dokumenter Islami Kitab Surgawi (Kamis 10:00, 8-12 menit)",
+          "kind": "schedule",
+          "enabled": true,
+          "schedule": "0 10 * * 4 Asia/Jakarta",
+          "failureStreak": 0,
+          "lastRun": null,
+          "lastChecked": "2026-11-29",
+          "timeoutMinutes": 240
+        },
         {
           "id": "aa2deb00-5c6a-4d99-b1b4-4e65231c0c5b",
           "name": "Monitoring & Produksi Postingan Harian Kitab Surgawi",
