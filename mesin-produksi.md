@@ -1,6 +1,6 @@
 # Mesin Produksi — Kitab Surgawi
 
-> Ringkasan operasional. Detail: `CATATAN-MESIN-PRODUKSI.md`. Diperbarui 28 November 2026.
+> Ringkasan operasional. Detail: `CATATAN-MESIN-PRODUKSI.md`. Diperbarui 29 November 2026.
 
 | Item | Nilai |
 |------|-------|
