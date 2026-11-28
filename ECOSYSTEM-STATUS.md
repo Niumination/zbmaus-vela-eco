@@ -1,6 +1,6 @@
 # Ekosistem zbmaus — Status Saat Ini
 
-> Generated 28 November 2026. Sumber kebenaran: data live tool agents. Repo ini artefak turunan.
+> Generated 29 November 2026. Sumber kebenaran: data live tool agents. Repo ini artefak turunan.
 
 | Item | Jumlah | Keterangan |
 |------|--------|------------|
@@ -12,7 +12,13 @@
 | Catatan tim | 13 | accepted |
 | Repo zbmaus | 6 | eco, secrets, vela, asn-admin, zbmaus-humanoid, zbmaus-kitab-surgawi |
 
-## Koreksi penting
+## Koreksi 29 Nov
+
+- ecosystem/routines/triggers.json v2.4.0: 17 trigger (sebelumnya 15); b2e9a760 dan e71db9c1 ditambahkan; 5af330ca ditandai disabled.
+- ecosystem/bots.json v1.4.0: stats 17/15/2; model Superpowers Engineer = opencode/seaglass-alpha-free.
+- Katalog skill: model Superpowers Engineer dikoreksi.
+
+## Riwayat koreksi
 
 - Versi 2.3.0 triggers.json salah menamai `b2e9a760` (sebenarnya bersih-bersih storage 03:00) dan `e71db9c1` (produksi Kamis 10:00). Sudah dikoreksi di v2.4.0.
 - `bots.json` v1.4.0 memuat ID buatan; v1.5.0 memakai UUID asli dari data live.
