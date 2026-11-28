@@ -1,6 +1,6 @@
 # CATATAN-MESIN-PRODUKSI
 
-> Diperbarui 28 November 2026 berdasarkan data trigger live. Versi sebelumnya keliru menamai `b2e9a760` dan `e71db9c1`.
+> Diperbarui 29 November 2026 berdasarkan data trigger live. Versi sebelumnya keliru menamai `b2e9a760` dan `e71db9c1`.
 
 ## Fakta trigger (data live)
 
