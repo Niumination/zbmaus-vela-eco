@@ -1,12 +1,13 @@
 ## 29 November 2026 — Sinkronisasi harian & koreksi drift registry (v1.4.0 / v2.4.0)
 
-Inventarisasi live: 8 bot, 17 trigger (15 aktif, 2 nonaktif), 4 skill, 7 app aktif, 13 catatan tim, 0 room, 6 repo zbmaus. Urutan kumpulkan → audit → tulis eco → backup secrets → verifikasi dijalankan.
+Inventarisasi live: 8 bot, 17 trigger (14 aktif, 3 nonaktif), 4 skill, 7 app aktif, 13 catatan tim, 0 room, 6 repo zbmaus. Urutan kumpulkan → audit → tulis eco → backup secrets → verifikasi dijalankan.
 
 - ecosystem/routines/triggers.json v2.4.0: 17 trigger lengkap; menambah b2e9a760 (bersih-bersih storage 03:00) dan e71db9c1 (dokumenter Kamis 10:00); 5af330ca dikoreksi jadi disabled; waktu jalan terakhir disegarkan dari data live.
 - Dua file instruksi baru: ecosystem/routines/instructions/b2e9a760-b917.md dan e71db9c1-84d6.md.
-- ecosystem/bots.json v1.4.0: stats 17/15/2, model Superpowers Engineer = opencode/seaglass-alpha-free, tanggal verifikasi 29 Nov.
+- ecosystem/bots.json v1.4.0: stats 17/14/3, model Superpowers Engineer = opencode/seaglass-alpha-free, tanggal verifikasi 29 Nov.
 - ecosystem/skills/catalog.md: koreksi model Superpowers Engineer.
 - connected_apps.json, ECOSYSTEM-STATUS.md, CATATAN-MESIN-PRODUKSI.md, mesin-produksi.md, dan indeks .zbmaus/raw diperbarui tanggalnya.
+- Koreksi hitungan: 3 routine nonaktif (2f8d2271, 5630e281, 5af330ca), bukan 2 — snapshot sebelumnya keliru.
 - Audit kredensial: tidak ada token, password, cookie, private key, atau env sensitif di file publik yang ditulis.
 
 # CHANGELOG — zbmaus-vela-eco
