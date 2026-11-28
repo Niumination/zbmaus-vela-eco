@@ -1,23 +1,173 @@
 {
   "_meta": {
     "schema": "zbmaus.bot-registry",
-    "version": "1.5.0",
-    "generated": "2026-11-28T00:00:00+07:00",
+    "version": "1.6.0",
+    "generated": "2026-11-29T00:00:00+07:00",
     "generated_by": "Sinkronisasi & Backup Harian Ekosistem zbmaus",
     "description": "Registrasi bot. Sumber kebenaran: agents_list_bots / list_room_targets (data live). ID adalah UUID asli, bukan turunan nama.",
     "notes": "Repo publik: tanpa token, password, cookie, private key, atau variabel env sensitif."
   },
   "bots": [
-    {"id":"e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7","name":"ZB","display_name":"ZB (Chief of Staff)","role":"Orkestrator ekosistem zbmaus; koordinasi tim, delegasi, pengawasan harian.","model":"opencode/longcat-2.5-free","department":"General","owner":"Niumination","status":"active","triggers":3,"skills":[],"connected_apps":["GitHub","YouTube","Facebook","Instagram","Vercel","Kaggle"],"soul":"souls/zb.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"3f3b907a-297d-4cea-92d2-92c276157470","name":"AsnAdmin","display_name":"AsnAdmin","role":"Spesialis repo privat asn-admin — mesin produksi administrasi ASN Diskominfo Aceh Tengah.","model":"agnes/agnes-2.5-flash","department":"General","owner":"Niumination","status":"active","triggers":0,"skills":[],"connected_apps":["GitHub"],"soul":"souls/asnadmin.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"c3ec552d-e63d-45cd-ba95-ce0f6e95d3f9","name":"ZbmausHumanoid-Vercel","display_name":"ZbmausHumanoid-Vercel","role":"Spesialis zbmaus-humanoid.vercel.app (Vite + React + TypeScript), webhook live site chat.","model":"agnes/agnes-2.5-flash","department":"General","owner":"Niumination","status":"active","triggers":1,"skills":[],"connected_apps":["GitHub","Vercel"],"soul":"souls/zbmaushumanoid-vercel.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"3bbb857a-0cdc-4849-898b-a135cf3bf78c","name":"YouTubeGrowth Kitab Surgawi","display_name":"YouTubeGrowth Kitab Surgawi","role":"YouTube Growth & Monetization specialist untuk @kitabsurgawi-1357; produksi dan distribusi konten Islami.","model":"opencode/hy4-flash-free","department":"General","owner":"Niumination","status":"active","triggers":12,"skills":[],"connected_apps":["YouTube","Facebook","Instagram","GitHub"],"soul":"souls/youtubegrowth.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"c927d946-7a7e-4a77-b0b5-e4e9b6942fb7","name":"IslamicEdu Kids","display_name":"IslamicEdu Kids","role":"Spesialis Pendidikan Agama Islam anak usia 2-4 tahun.","model":"opencode/hy4-flash-free","department":"General","owner":"Niumination","status":"active","triggers":0,"skills":[],"connected_apps":[],"soul":"souls/islamicedu-kids.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"0f9c19ec-26e5-4e36-91dd-3d4870bfcfff","name":"Kaggle-Qwen","display_name":"Kaggle-Qwen","role":"Asisten ringan berbasis Qwen3.8-Flash-Next Gyro-S di Kaggle T4 GPU.","model":"qwen3.8-flash-next-gyro-gyro-s","department":"General","owner":"Niumination","status":"active","triggers":0,"skills":[],"connected_apps":["Kaggle"],"soul":"souls/kaggle-qwen.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"8217c1f3-e5da-4872-b68f-7dc645123226","name":"Nova","display_name":"Nova","role":"Spesialis tupoksi baru & integrasi ekosistem zbmaus; sinkronisasi dan backup harian.","model":"opencode/hy4-flash-free","department":"General","owner":"Niumination","status":"active","triggers":1,"skills":["omb-ecosystem-sync","superpowers-workflow"],"connected_apps":["GitHub","YouTube","Facebook","Instagram","Vercel","Kaggle"],"soul":"souls/nova.md","last_synced":"2026-11-28T00:00:00+07:00"},
-    {"id":"134f49fb-c860-41e9-a45e-13b00c8dac67","name":"Superpowers Engineer","display_name":"Superpowers Engineer","role":"Spesialis metodologi engineering Superpowers (brainstorm, worktree, TDD, review, verifikasi).","model":"opencode/seaglass-alpha-free","department":"General","owner":"Niumination","status":"active","triggers":0,"skills":["superpowers-workflow"],"connected_apps":[],"soul":"souls/superpowers-engineer.md","last_synced":"2026-11-28T00:00:00+07:00"}
+    {
+      "id": "e0505090-b6ea-4ed4-8cab-2f1b22fe8fd7",
+      "name": "ZB",
+      "display_name": "ZB (Chief of Staff)",
+      "role": "Orkestrator ekosistem zbmaus; koordinasi tim, delegasi, pengawasan harian.",
+      "model": "opencode/longcat-2.5-free",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 3,
+      "skills": [],
+      "connected_apps": [
+        "GitHub",
+        "YouTube",
+        "Facebook",
+        "Instagram",
+        "Vercel",
+        "Kaggle"
+      ],
+      "soul": "souls/zb.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "3f3b907a-297d-4cea-92d2-92c276157470",
+      "name": "AsnAdmin",
+      "display_name": "AsnAdmin",
+      "role": "Spesialis repo privat asn-admin — mesin produksi administrasi ASN Diskominfo Aceh Tengah.",
+      "model": "agnes/agnes-2.5-flash",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 0,
+      "skills": [],
+      "connected_apps": [
+        "GitHub"
+      ],
+      "soul": "souls/asnadmin.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "c3ec552d-e63d-45cd-ba95-ce0f6e95d3f9",
+      "name": "ZbmausHumanoid-Vercel",
+      "display_name": "ZbmausHumanoid-Vercel",
+      "role": "Spesialis zbmaus-humanoid.vercel.app (Vite + React + TypeScript), webhook live site chat.",
+      "model": "agnes/agnes-2.5-flash",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 1,
+      "skills": [],
+      "connected_apps": [
+        "GitHub",
+        "Vercel"
+      ],
+      "soul": "souls/zbmaushumanoid-vercel.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "3bbb857a-0cdc-4849-898b-a135cf3bf78c",
+      "name": "YouTubeGrowth Kitab Surgawi",
+      "display_name": "YouTubeGrowth Kitab Surgawi",
+      "role": "YouTube Growth & Monetization specialist untuk @kitabsurgawi-1357; produksi dan distribusi konten Islami.",
+      "model": "opencode/hy4-flash-free",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 12,
+      "skills": [],
+      "connected_apps": [
+        "YouTube",
+        "Facebook",
+        "Instagram",
+        "GitHub"
+      ],
+      "soul": "souls/youtubegrowth.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "c927d946-7a7e-4a77-b0b5-e4e9b6942fb7",
+      "name": "IslamicEdu Kids",
+      "display_name": "IslamicEdu Kids",
+      "role": "Spesialis Pendidikan Agama Islam anak usia 2-4 tahun.",
+      "model": "opencode/hy4-flash-free",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 0,
+      "skills": [],
+      "connected_apps": [],
+      "soul": "souls/islamicedu-kids.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "0f9c19ec-26e5-4e36-91dd-3d4870bfcfff",
+      "name": "Kaggle-Qwen",
+      "display_name": "Kaggle-Qwen",
+      "role": "Asisten ringan berbasis Qwen3.8-Flash-Next Gyro-S di Kaggle T4 GPU.",
+      "model": "qwen3.8-flash-next-gyro-gyro-s",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 0,
+      "skills": [],
+      "connected_apps": [
+        "Kaggle"
+      ],
+      "soul": "souls/kaggle-qwen.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "8217c1f3-e5da-4872-b68f-7dc645123226",
+      "name": "Nova",
+      "display_name": "Nova",
+      "role": "Spesialis tupoksi baru & integrasi ekosistem zbmaus; sinkronisasi dan backup harian.",
+      "model": "opencode/hy4-flash-free",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 1,
+      "skills": [
+        "omb-ecosystem-sync",
+        "superpowers-workflow"
+      ],
+      "connected_apps": [
+        "GitHub",
+        "YouTube",
+        "Facebook",
+        "Instagram",
+        "Vercel",
+        "Kaggle"
+      ],
+      "soul": "souls/nova.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    },
+    {
+      "id": "134f49fb-c860-41e9-a45e-13b00c8dac67",
+      "name": "Superpowers Engineer",
+      "display_name": "Superpowers Engineer",
+      "role": "Spesialis metodologi engineering Superpowers (brainstorm, worktree, TDD, review, verifikasi).",
+      "model": "opencode/seaglass-alpha-free",
+      "department": "General",
+      "owner": "Niumination",
+      "status": "active",
+      "triggers": 0,
+      "skills": [
+        "superpowers-workflow"
+      ],
+      "connected_apps": [],
+      "soul": "souls/superpowers-engineer.md",
+      "last_synced": "2026-11-29T00:00:00+07:00"
+    }
   ],
-  "stats": {"total_bots":8,"active":8,"inactive":0,"departments":["General"]},
+  "stats": {
+    "total_bots": 8,
+    "active": 8,
+    "inactive": 0,
+    "departments": [
+      "General"
+    ]
+  },
   "corrections": [
     "Koreksi 29 Nov: seluruh ID bot diganti dengan UUID asli dari agents_list_bots. Versi 1.4.0 memuat ID buatan dan tidak otoritatif.",
     "Model Superpowers Engineer: opencode/seaglass-alpha-free (bukan agnes atau deepseek).",
