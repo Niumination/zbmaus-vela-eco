@@ -1,7 +1,7 @@
 {
-  "version": "1.3.0",
-  "updated_at": "2026-11-27T00:00:00+07:00",
-  "source": "Rutinitas Sinkronisasi & Backup Harian Ekosistem zbmaus (ZB) — 2026-11-27 (inventarisasi live via daftar bot & trigger)",
+  "version": "1.4.0",
+  "updated_at": "2026-11-29T00:00:00+07:00",
+  "source": "Rutinitas Sinkronisasi & Backup Harian Ekosistem zbmaus (ZB) — 2026-11-29 (inventarisasi live via daftar bot & trigger)",
   "department": "General",
   "chief_bot": {
     "name": "ZB",
@@ -12,8 +12,8 @@
   },
   "stats": {
     "bots": 8,
-    "triggers": 15,
-    "enabled": 13,
+    "triggers": 17,
+    "enabled": 15,
     "paused": 2
   },
   "teammates": [
@@ -31,8 +31,8 @@
           "enabled": true,
           "schedule": "0 23 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T16:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-28T16:00:09.895Z",
+          "lastChecked": "2026-11-29",
           "timeoutMinutes": 60
         },
         {
@@ -42,8 +42,8 @@
           "enabled": true,
           "schedule": "0 9 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T02:00:00Z",
-          "lastChecked": "2026-11-27"
+          "lastRun": "2026-11-28T02:00:07.259Z",
+          "lastChecked": "2026-11-29"
         },
         {
           "id": "e0c1a6d9-72a7-4705-a30d-31a2947df0fd",
@@ -53,11 +53,11 @@
           "schedule": "every 15 minutes",
           "failureStreak": 0,
           "lastRun": null,
-          "lastChecked": "2026-11-27",
+          "lastChecked": "2026-11-29",
           "timeoutMinutes": 15
         }
       ],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "AsnAdmin",
@@ -67,7 +67,7 @@
       "description": "Spesialis repo privat Niumination/asn-admin — mesin produksi administrasi ASN Diskominfo Aceh Tengah: naskah dinas, SKP/eKinerja, administrasi harian, plus gate keamanan repo.",
       "department": "General",
       "triggers": [],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "ZbmausHumanoid-Vercel",
@@ -84,13 +84,13 @@
           "enabled": true,
           "schedule": "webhook",
           "failureStreak": 0,
-          "lastRun": "2026-11-24T16:35:26.766Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-27T01:31:57.975Z",
+          "lastChecked": "2026-11-29",
           "calls": 22,
           "lastCalledAt": "2026-11-24T16:35:26.766Z"
         }
       ],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "YouTubeGrowth Kitab Surgawi",
@@ -107,8 +107,8 @@
           "enabled": true,
           "schedule": "0 9 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T02:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-28T02:00:07.204Z",
+          "lastChecked": "2026-11-29",
           "continuity": true,
           "timeoutMinutes": 240
         },
@@ -119,8 +119,8 @@
           "enabled": true,
           "schedule": "0 12,21 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T14:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-28T14:00:09.518Z",
+          "lastChecked": "2026-11-29",
           "timeoutMinutes": 30
         },
         {
@@ -130,8 +130,8 @@
           "enabled": true,
           "schedule": "0 10,20 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T13:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-28T13:00:09.326Z",
+          "lastChecked": "2026-11-29",
           "timeoutMinutes": 20
         },
         {
@@ -141,8 +141,8 @@
           "enabled": true,
           "schedule": "30 15 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T08:30:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-28T08:30:08.448Z",
+          "lastChecked": "2026-11-29",
           "continuity": true,
           "timeoutMinutes": 30
         },
@@ -153,8 +153,8 @@
           "enabled": true,
           "schedule": "45 15 * * * Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T08:45:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-28T08:45:08.552Z",
+          "lastChecked": "2026-11-29",
           "continuity": true,
           "timeoutMinutes": 30
         },
@@ -165,8 +165,8 @@
           "enabled": true,
           "schedule": "0 15 * * 5 Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-20T08:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-27T08:00:03.537Z",
+          "lastChecked": "2026-11-29",
           "continuity": true,
           "timeoutMinutes": 30
         },
@@ -177,19 +177,19 @@
           "enabled": true,
           "schedule": "0 7 * * 1 Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-23T00:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-23T00:00:05.088Z",
+          "lastChecked": "2026-11-29",
           "timeoutMinutes": 120
         },
         {
           "id": "5af330ca-15f2-41f8-8c83-a2cf1dd9e1d6",
           "name": "Produksi & Publikasi Dokumenter Islami Kitab Surgawi",
           "kind": "schedule",
-          "enabled": true,
+          "enabled": false,
           "schedule": "0 10 * * 1,4 Asia/Jakarta",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T03:00:00Z",
-          "lastChecked": "2026-11-27",
+          "lastRun": "2026-11-26T03:00:09.714Z",
+          "lastChecked": "2026-11-29",
           "timeoutMinutes": 240
         },
         {
@@ -199,8 +199,8 @@
           "enabled": false,
           "schedule": "once 2026-11-19T09:15:00Z",
           "failureStreak": 0,
-          "lastRun": "2026-11-19T09:15:00Z",
-          "lastChecked": "2026-11-27"
+          "lastRun": "2026-11-19T09:15:06.932Z",
+          "lastChecked": "2026-11-29"
         },
         {
           "id": "5630e281-0128-4d6c-aa2d-7f3c17265e69",
@@ -209,11 +209,11 @@
           "enabled": false,
           "schedule": "once 2026-11-19T08:15:00Z",
           "failureStreak": 0,
-          "lastRun": "2026-11-19T08:15:00Z",
-          "lastChecked": "2026-11-27"
+          "lastRun": "2026-11-19T08:15:06.750Z",
+          "lastChecked": "2026-11-29"
         }
       ],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "IslamicEdu Kids",
@@ -223,7 +223,7 @@
       "description": "Bot spesialis pembuatan konten edukasi Islam untuk anak usia dini (2-4 tahun): video, gambar, cerita, lagu.",
       "department": "General",
       "triggers": [],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "Kaggle-Qwen",
@@ -233,7 +233,7 @@
       "description": "Bot asisten ringan berbasis model Qwen dari Kaggle untuk inferensi cepat dan cost-efficient.",
       "department": "General",
       "triggers": [],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "Nova",
@@ -250,21 +250,21 @@
           "enabled": true,
           "schedule": "08:00 all weekdays (Asia/Shanghai)",
           "failureStreak": 0,
-          "lastRun": "2026-11-26T00:00:00Z",
-          "lastChecked": "2026-11-27"
+          "lastRun": "2026-11-28T00:00:06.788Z",
+          "lastChecked": "2026-11-29"
         }
       ],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     },
     {
       "name": "Superpowers Engineer",
       "id": "134f49fb-c860-41e9-a45e-13b00c8dac67",
-      "model": "opencode/deepseek-v4.1-flash-free",
+      "model": "opencode/seaglass-alpha-free",
       "role": "Spesialis Metodologi Engineering (Superpowers)",
       "description": "Spesialis metodologi engineering tim General (ekosistem zbmaus). Terapkan alur Superpowers pada tiap tugas coding: brainstorm dulu (pahami apa dan mengapa, lihat konteks yang ada, paparkan opsi, minta setuju), isolasi worktree, rencana tugas kecil 2-5 menit di docs/superpowers/plans/ dengan path file dan tes pasti, eksekusi satu tugas per thread coordinate_bots disertai review tiap tugas, TDD RED-GREEN-REFACTOR, dan verifikasi penuh sebelum klaim selesai.",
       "department": "General",
       "triggers": [],
-      "model_checked_at": "2026-11-27"
+      "model_checked_at": "2026-11-29"
     }
   ]
 }
