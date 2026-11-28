@@ -9,8 +9,8 @@
   },
   "stats": {
     "total": 17,
-    "enabled": 15,
-    "disabled": 2,
+    "enabled": 14,
+    "disabled": 3,
     "webhooks": 1,
     "by_bot": {
       "ZB": 3,
